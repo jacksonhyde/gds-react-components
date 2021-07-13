@@ -141,7 +141,7 @@ class DateInput extends PureComponent<DateInputProps, DateInputState> {
             registerRef: this.registerRef,
           };
           return (
-            <div className={classNames('nhsuk-date-input', className)} {...restRenderProps} id={id}>
+            <div className={classNames('govuk-date-input', className)} {...restRenderProps} id={id}>
               <DateInputContext.Provider value={contextValue}>
                 {children || (
                   <>

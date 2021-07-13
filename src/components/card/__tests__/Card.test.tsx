@@ -42,7 +42,7 @@ describe('Card', () => {
     );
     expect(
       wrapper.find(Card.Link).containsMatchingElement(
-        <button type="button" className="nhsuk-card__link">
+        <button type="button" className="govuk-card__link">
           Click me!
         </button>,
       ),
@@ -53,7 +53,7 @@ describe('Card', () => {
     const wrapper = mount(
       <Card clickable>
         <Card.Content>
-          <Card.Heading className="nhsuk-heading-m">
+          <Card.Heading className="govuk-heading-m">
             <Card.Link href="#">Introduction to care and support</Card.Link>
           </Card.Heading>
           <Card.Description>
@@ -63,8 +63,8 @@ describe('Card', () => {
       </Card>,
     );
 
-    expect(wrapper.find('div.nhsuk-card').props().className).toBe(
-      'nhsuk-card nhsuk-card--clickable',
+    expect(wrapper.find('div.govuk-card').props().className).toBe(
+      'govuk-card govuk-card--clickable',
     );
 
     wrapper.unmount();
@@ -80,12 +80,12 @@ describe('Card', () => {
       </Card>,
     );
 
-    expect(wrapper.find('div.nhsuk-card').props().className).toBe('nhsuk-card nhsuk-card--feature');
-    expect(wrapper.find('div.nhsuk-card__content').props().className).toBe(
-      'nhsuk-card__content nhsuk-card__content--feature',
+    expect(wrapper.find('div.govuk-card').props().className).toBe('govuk-card govuk-card--feature');
+    expect(wrapper.find('div.govuk-card__content').props().className).toBe(
+      'govuk-card__content govuk-card__content--feature',
     );
-    expect(wrapper.find('h2.nhsuk-card__heading').props().className).toBe(
-      'nhsuk-card__heading nhsuk-card__heading--feature',
+    expect(wrapper.find('h2.govuk-card__heading').props().className).toBe(
+      'govuk-card__heading govuk-card__heading--feature',
     );
 
     wrapper.unmount();

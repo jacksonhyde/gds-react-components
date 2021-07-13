@@ -2,6 +2,6 @@
 
 exports[`Container matches snapshot 1`] = `
 <div
-  className="nhsuk-width-container"
+  className="govuk-width-container"
 />
 `;

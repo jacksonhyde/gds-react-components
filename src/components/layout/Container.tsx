@@ -8,8 +8,8 @@ interface ContainerProps extends HTMLProps<HTMLDivElement> {
 const Container: React.FC<ContainerProps> = ({ className, fluid, ...rest }) => (
   <div
     className={classNames(
-      { 'nhsuk-width-container': !fluid },
-      { 'nhsuk-width-container-fluid': fluid },
+      { 'govuk-width-container': !fluid },
+      { 'govuk-width-container-fluid': fluid },
       className,
     )}
     {...rest}

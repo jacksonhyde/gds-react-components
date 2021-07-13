@@ -2,6 +2,6 @@
 
 exports[`Col matches snapshot: Col 1`] = `
 <div
-  className="nhsuk-grid-column-full"
+  className="govuk-grid-column-full"
 />
 `;

@@ -9,12 +9,9 @@ const BackLink: React.FC<AsElementLink<HTMLAnchorElement>> = ({
   asElement: Component = 'a',
   ...rest
 }) => (
-  <div className="nhsuk-back-link">
-    <Component className={classNames('nhsuk-back-link__link', className)} {...rest}>
-      <ChevronLeft />
-      {children}
-    </Component>
-  </div>
+  <Component className={classNames('govuk-back-link', className)} {...rest}>
+    {children}
+  </Component>
 );
 
 export default BackLink;

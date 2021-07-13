@@ -3,7 +3,7 @@
 exports[`Button adds correct classes for button types: DisabledButton 1`] = `
 <button
   aria-disabled="true"
-  className="nhsuk-button nhsuk-button--disabled"
+  className="govuk-button govuk-button--disabled"
   disabled={true}
   type="submit"
 >
@@ -14,7 +14,7 @@ exports[`Button adds correct classes for button types: DisabledButton 1`] = `
 exports[`Button adds correct classes for button types: ReverseButton 1`] = `
 <button
   aria-disabled="false"
-  className="nhsuk-button nhsuk-button--reverse"
+  className="govuk-button govuk-button--reverse"
   type="submit"
 >
   Submit
@@ -24,7 +24,7 @@ exports[`Button adds correct classes for button types: ReverseButton 1`] = `
 exports[`Button adds correct classes for button types: SecondaryButton 1`] = `
 <button
   aria-disabled="false"
-  className="nhsuk-button nhsuk-button--secondary"
+  className="govuk-button govuk-button--secondary"
   type="submit"
 >
   Submit
@@ -34,7 +34,7 @@ exports[`Button adds correct classes for button types: SecondaryButton 1`] = `
 exports[`Button matches snapshot: PlainButton 1`] = `
 <button
   aria-disabled="false"
-  className="nhsuk-button"
+  className="govuk-button"
   type="submit"
 >
   Submit
@@ -44,7 +44,7 @@ exports[`Button matches snapshot: PlainButton 1`] = `
 exports[`ButtonLink adds correct classes for button types: DisabledButton 1`] = `
 <a
   aria-disabled="true"
-  className="nhsuk-button nhsuk-button--disabled"
+  className="govuk-button govuk-button--disabled"
   draggable={false}
   href="/"
   role="button"
@@ -56,7 +56,7 @@ exports[`ButtonLink adds correct classes for button types: DisabledButton 1`] = 
 exports[`ButtonLink adds correct classes for button types: ReverseButton 1`] = `
 <a
   aria-disabled="false"
-  className="nhsuk-button nhsuk-button--reverse"
+  className="govuk-button govuk-button--reverse"
   draggable={false}
   href="/"
   role="button"
@@ -68,7 +68,7 @@ exports[`ButtonLink adds correct classes for button types: ReverseButton 1`] = `
 exports[`ButtonLink adds correct classes for button types: SecondaryButton 1`] = `
 <a
   aria-disabled="false"
-  className="nhsuk-button nhsuk-button--secondary"
+  className="govuk-button govuk-button--secondary"
   draggable={false}
   href="/"
   role="button"
@@ -80,7 +80,7 @@ exports[`ButtonLink adds correct classes for button types: SecondaryButton 1`] =
 exports[`ButtonLink matches snapshot: PlainButton 1`] = `
 <a
   aria-disabled="false"
-  className="nhsuk-button"
+  className="govuk-button"
   draggable={false}
   href="/"
   role="button"

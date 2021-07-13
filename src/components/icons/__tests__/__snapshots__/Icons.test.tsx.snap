@@ -4,12 +4,12 @@ exports[`Icons all icons match snapshots: ArrowLeft 1`] = `
 <ArrowLeft>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__arrow-left"
+    iconType="govuk-icon__arrow-left"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__arrow-left"
+      className="govuk-icon govuk-icon__arrow-left"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -27,12 +27,12 @@ exports[`Icons all icons match snapshots: ArrowRight 1`] = `
 <ArrowRight>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__arrow-right"
+    iconType="govuk-icon__arrow-right"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__arrow-right"
+      className="govuk-icon govuk-icon__arrow-right"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -50,12 +50,12 @@ exports[`Icons all icons match snapshots: ArrowRightCircle 1`] = `
 <ArrowRightCircle>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__arrow-right-circle"
+    iconType="govuk-icon__arrow-right-circle"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__arrow-right-circle"
+      className="govuk-icon govuk-icon__arrow-right-circle"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -80,7 +80,7 @@ exports[`Icons all icons match snapshots: BaseIconSVG 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="nhsuk-icon"
+    className="govuk-icon"
     height={32}
     viewBox="0 0 24 24"
     width={32}
@@ -93,12 +93,12 @@ exports[`Icons all icons match snapshots: ChevronLeft 1`] = `
 <ChevronLeft>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__chevron-left"
+    iconType="govuk-icon__chevron-left"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__chevron-left"
+      className="govuk-icon govuk-icon__chevron-left"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -116,12 +116,12 @@ exports[`Icons all icons match snapshots: ChevronRight 1`] = `
 <ChevronRight>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__chevron-right"
+    iconType="govuk-icon__chevron-right"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__chevron-right"
+      className="govuk-icon govuk-icon__chevron-right"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -139,12 +139,12 @@ exports[`Icons all icons match snapshots: Close 1`] = `
 <Close>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__close"
+    iconType="govuk-icon__close"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__close"
+      className="govuk-icon govuk-icon__close"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -162,12 +162,12 @@ exports[`Icons all icons match snapshots: Cross 1`] = `
 <Cross>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__cross"
+    iconType="govuk-icon__cross"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__cross"
+      className="govuk-icon govuk-icon__cross"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -188,12 +188,12 @@ exports[`Icons all icons match snapshots: Emdash 1`] = `
 <Emdash>
   <BaseIconSVG
     height={1}
-    iconType="nhsuk-icon__emdash"
+    iconType="govuk-icon__emdash"
     width={19}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__emdash"
+      className="govuk-icon govuk-icon__emdash"
       height={1}
       viewBox="0 0 24 24"
       width={19}
@@ -211,12 +211,12 @@ exports[`Icons all icons match snapshots: Minus 1`] = `
 <Minus>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__minus"
+    iconType="govuk-icon__minus"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__minus"
+      className="govuk-icon govuk-icon__minus"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -244,12 +244,12 @@ exports[`Icons all icons match snapshots: Plus 1`] = `
 <Plus>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__minus"
+    iconType="govuk-icon__minus"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__minus"
+      className="govuk-icon govuk-icon__minus"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -277,12 +277,12 @@ exports[`Icons all icons match snapshots: Search 1`] = `
 <Search>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__search"
+    iconType="govuk-icon__search"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__search"
+      className="govuk-icon govuk-icon__search"
       height={32}
       viewBox="0 0 24 24"
       width={32}
@@ -300,12 +300,12 @@ exports[`Icons all icons match snapshots: SmallEmdash 1`] = `
 <SmallEmdash>
   <BaseIconSVG
     height={1}
-    iconType="nhsuk-icon__emdash"
+    iconType="govuk-icon__emdash"
     width={16}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__emdash"
+      className="govuk-icon govuk-icon__emdash"
       height={1}
       viewBox="0 0 24 24"
       width={16}
@@ -323,12 +323,12 @@ exports[`Icons all icons match snapshots: Tick 1`] = `
 <Tick>
   <BaseIconSVG
     height={32}
-    iconType="nhsuk-icon__tick"
+    iconType="govuk-icon__tick"
     width={32}
   >
     <svg
       aria-hidden="true"
-      className="nhsuk-icon nhsuk-icon__tick"
+      className="govuk-icon govuk-icon__tick"
       height={32}
       viewBox="0 0 24 24"
       width={32}

@@ -5,7 +5,7 @@ exports[`Table.Row matches snapshot 1`] = `
   <tbody>
     <Table.Row>
       <tr
-        className="nhsuk-table__row"
+        className="govuk-table__row"
       />
     </Table.Row>
   </tbody>

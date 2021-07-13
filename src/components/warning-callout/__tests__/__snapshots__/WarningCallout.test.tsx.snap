@@ -3,23 +3,23 @@
 exports[`WarningCallout matches snapshot 1`] = `
 <WarningCallout>
   <div
-    className="nhsuk-warning-callout"
+    className="govuk-warning-callout"
   >
     <WarningCalloutLabel
       visuallyHiddenText="Important: "
     >
       <HeadingLevel
-        className="nhsuk-warning-callout__label"
+        className="govuk-warning-callout__label"
         headingLevel="h3"
       >
         <h3
-          className="nhsuk-warning-callout__label"
+          className="govuk-warning-callout__label"
         >
           <span
             role="text"
           >
             <span
-              className="nhsuk-u-visually-hidden"
+              className="govuk-u-visually-hidden"
             >
               Important: 
             </span>

@@ -19,10 +19,10 @@ describe('Fieldset', () => {
 
     it('renders as page heading', () => {
       const element = shallow(<Fieldset.Legend isPageHeading>Text</Fieldset.Legend>);
-      expect(element.hasClass('nhsuk-fieldset__legend--xl')).toBeTruthy();
+      expect(element.hasClass('govuk-fieldset__legend--xl')).toBeTruthy();
       expect(
         element
-          .find('.nhsuk-fieldset__heading')
+          .find('.govuk-fieldset__heading')
           .render()
           .text(),
       ).toBe('Text');

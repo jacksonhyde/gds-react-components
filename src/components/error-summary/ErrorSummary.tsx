@@ -2,15 +2,15 @@ import React, { HTMLProps } from 'react';
 import classNames from 'classnames';
 
 const ErrorSummaryTitle: React.FC<HTMLProps<HTMLHeadingElement>> = ({ className, ...rest }) => (
-  <h2 className={classNames('nhsuk-error-summary__title', className)} {...rest} />
+  <h2 className={classNames('govuk-error-summary__title', className)} {...rest} />
 );
 
 const ErrorSummaryBody: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }) => (
-  <div className={classNames('nhsuk-error-summary__body', className)} {...rest} />
+  <div className={classNames('govuk-error-summary__body', className)} {...rest} />
 );
 
 const ErrorSummaryList: React.FC<HTMLProps<HTMLUListElement>> = ({ className, ...rest }) => (
-  <ul className={classNames('nhsuk-list', 'nhsuk-error-summary__list', className)} {...rest} />
+  <ul className={classNames('govuk-list', 'govuk-error-summary__list', className)} {...rest} />
 );
 
 const ErrorSummaryListItem: React.FC<HTMLProps<HTMLAnchorElement>> = (props) => (
@@ -27,7 +27,7 @@ interface ErrorSummary extends React.FC<HTMLProps<HTMLDivElement>> {
 }
 
 const ErrorSummary: ErrorSummary = ({ className, ...rest }) => (
-  <div className={classNames('nhsuk-error-summary', className)} {...rest} />
+  <div className={classNames('govuk-error-summary', className)} {...rest} />
 );
 
 ErrorSummary.Title = ErrorSummaryTitle;

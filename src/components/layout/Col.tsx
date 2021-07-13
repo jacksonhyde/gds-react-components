@@ -1,13 +1,13 @@
 import React, { HTMLProps } from 'react';
 import classNames from 'classnames';
-import { ColWidth } from '../../util/types/NHSUKTypes';
+import { ColWidth } from '../../util/types/govukTypes';
 
 interface ColProps extends HTMLProps<HTMLDivElement> {
   width: ColWidth;
 }
 
 const Col: React.FC<ColProps> = ({ className, width, ...rest }) => (
-  <div className={classNames(`nhsuk-grid-column-${width}`, className)} {...rest} />
+  <div className={classNames(`govuk-grid-column-${width}`, className)} {...rest} />
 );
 
 export default Col;

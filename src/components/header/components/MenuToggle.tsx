@@ -25,9 +25,9 @@ const MenuToggle: React.FC<MenuToggleProps> = ({ onClick, ...rest }) => {
   }, []);
 
   return (
-    <div className="nhsuk-header__menu">
+    <div className="govuk-header__menu">
       <button
-        className={classNames('nhsuk-header__menu-toggle', { 'is-active': menuOpen })}
+        className={classNames('govuk-header__menu-toggle', { 'is-active': menuOpen })}
         aria-label="Open menu"
         aria-expanded={menuOpen ? 'true' : 'false'}
         onClick={onToggleClick}

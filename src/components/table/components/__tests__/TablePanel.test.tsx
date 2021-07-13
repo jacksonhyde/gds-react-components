@@ -20,7 +20,7 @@ describe('Table.Panel', () => {
     const heading = wrapper.find('h2');
 
     expect(heading.exists()).toBeTruthy();
-    expect(heading.prop('className')).toBe('nhsuk-table__heading-tab');
+    expect(heading.prop('className')).toBe('govuk-table__heading-tab');
     expect(heading.type()).toBe('h2');
 
     wrapper.unmount();

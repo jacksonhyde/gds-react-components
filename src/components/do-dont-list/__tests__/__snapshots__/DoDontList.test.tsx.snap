@@ -9,16 +9,16 @@ exports[`DoDontList DoDontList.Item matches snapshot: DoDontList.Item 1`] = `
 
 exports[`DoDontList matches snapshot: DoDontList-Do 1`] = `
 <div
-  className="nhsuk-do-dont-list"
+  className="govuk-do-dont-list"
 >
   <HeadingLevel
-    className="nhsuk-do-dont-list__label"
+    className="govuk-do-dont-list__label"
     headingLevel="h3"
   >
     Do
   </HeadingLevel>
   <ul
-    className="nhsuk-list nhsuk-list--tick"
+    className="govuk-list govuk-list--tick"
   >
     <ContextProvider
       value="do"
@@ -29,16 +29,16 @@ exports[`DoDontList matches snapshot: DoDontList-Do 1`] = `
 
 exports[`DoDontList matches snapshot: DoDontList-Dont 1`] = `
 <div
-  className="nhsuk-do-dont-list"
+  className="govuk-do-dont-list"
 >
   <HeadingLevel
-    className="nhsuk-do-dont-list__label"
+    className="govuk-do-dont-list__label"
     headingLevel="h3"
   >
     Don't
   </HeadingLevel>
   <ul
-    className="nhsuk-list nhsuk-list--cross"
+    className="govuk-list govuk-list--cross"
   >
     <ContextProvider
       value="dont"

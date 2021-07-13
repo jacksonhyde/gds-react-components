@@ -8,7 +8,7 @@ describe('Tag', () => {
 
     expect(wrapper).toMatchSnapshot();
 
-    expect(wrapper.find('strong').props().className).toBe('nhsuk-tag');
+    expect(wrapper.find('strong').props().className).toBe('govuk-tag');
 
     wrapper.unmount();
   });
@@ -27,7 +27,7 @@ describe('Tag', () => {
   ])('adds colour class %s ', (colour) => {
     const wrapper = shallow(<Tag color={colour} />);
 
-    expect(wrapper.find('strong').props().className).toBe(`nhsuk-tag nhsuk-tag--${colour}`);
+    expect(wrapper.find('strong').props().className).toBe(`govuk-tag govuk-tag--${colour}`);
 
     wrapper.unmount();
   });

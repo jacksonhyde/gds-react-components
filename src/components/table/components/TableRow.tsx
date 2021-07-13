@@ -26,14 +26,14 @@ const TableRow: React.FC<HTMLProps<HTMLTableRowElement>> = ({ className, childre
     });
 
     return (
-      <tr className={classNames('nhsuk-table__row', className)} {...rest}>
+      <tr className={classNames('govuk-table__row', className)} {...rest}>
         {tableCells}
       </tr>
     );
   }
 
   return (
-    <tr className={classNames('nhsuk-table__row', className)} {...rest}>
+    <tr className={classNames('govuk-table__row', className)} {...rest}>
       {children}
     </tr>
   );

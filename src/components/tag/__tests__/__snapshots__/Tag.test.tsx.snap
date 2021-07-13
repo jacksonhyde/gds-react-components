@@ -2,7 +2,7 @@
 
 exports[`Tag matches snapshot 1`] = `
 <strong
-  className="nhsuk-tag"
+  className="govuk-tag"
 >
   Active
 </strong>

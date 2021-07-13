@@ -2,6 +2,6 @@
 
 exports[`TableContainer matches snapshot 1`] = `
 <div
-  className="nhsuk-table-container"
+  className="govuk-table-container"
 />
 `;

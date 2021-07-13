@@ -65,8 +65,8 @@ class Table extends React.PureComponent<TableProps, TableState> {
       <TableContext.Provider value={contextValue}>
         <table
           className={classNames(
-            { 'nhsuk-table': !responsive },
-            { 'nhsuk-table-responsive': responsive },
+            { 'govuk-table': !responsive },
+            { 'govuk-table-responsive': responsive },
             className,
           )}
           {...rest}

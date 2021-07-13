@@ -22,34 +22,34 @@ const Panel: React.FC<PanelProps> = ({
   ...rest
 }) => (
   <li>
-    <div className={classNames('nhsuk-list-panel', className)} {...rest}>
+    <div className={classNames('govuk-list-panel', className)} {...rest}>
       {label ? (
-        <h2 className="nhsuk-list-panel__label" {...labelProps}>
+        <h2 className="govuk-list-panel__label" {...labelProps}>
           {label}
         </h2>
       ) : null}
       {noResults ? (
         <div
-          className={classNames('nhsuk-list-panel__box', {
-            'nhsuk-list-panel__box--with-label': label,
+          className={classNames('govuk-list-panel__box', {
+            'govuk-list-panel__box--with-label': label,
           })}
         >
-          <p className="nhsuk-list-panel--results-items__no-results">{children}</p>
+          <p className="govuk-list-panel--results-items__no-results">{children}</p>
         </div>
       ) : (
         <ul
-          className={classNames('nhsuk-list-panel__list', {
-            'nhsuk-list-panel__list--with-label': label,
+          className={classNames('govuk-list-panel__list', {
+            'govuk-list-panel__list--with-label': label,
           })}
         >
           {children}
         </ul>
       )}
       {backToTop ? (
-        <div className="nhsuk-back-to-top">
-          <a className="nhsuk-back-to-top__link" href={backToTopLink}>
+        <div className="govuk-back-to-top">
+          <a className="govuk-back-to-top__link" href={backToTopLink}>
             <svg
-              className="nhsuk-icon nhsuk-icon__arrow-right"
+              className="govuk-icon govuk-icon__arrow-right"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -65,12 +65,12 @@ const Panel: React.FC<PanelProps> = ({
 );
 
 const PanelItem: React.FC<HTMLProps<HTMLLIElement>> = ({ className, ...rest }) => (
-  <li className={classNames('nhsuk-list-panel__item', className)} {...rest} />
+  <li className={classNames('govuk-list-panel__item', className)} {...rest} />
 );
 
 const PanelLinkItem: React.FC<AsElementLink<HTMLAnchorElement>> = ({ className, asElement: Component = 'a', ...rest }) => (
   <PanelItem>
-    <Component className={classNames('nhsuk-list-panel__link', className)} {...rest} />
+    <Component className={classNames('govuk-list-panel__link', className)} {...rest} />
   </PanelItem>
 );
 
@@ -85,7 +85,7 @@ interface ListPanel extends React.FC<ListPanelProps> {
 }
 
 const ListPanel: ListPanel = ({ className, children, ...rest }) => (
-  <ol className={classNames('nhsuk-list', className)} {...rest}>
+  <ol className={classNames('govuk-list', className)} {...rest}>
     {children}
   </ol>
 );

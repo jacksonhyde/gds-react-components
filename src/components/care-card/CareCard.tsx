@@ -1,6 +1,6 @@
 import React, { HTMLProps, createContext, useContext } from 'react';
 import classNames from 'classnames';
-import { CareCardType } from '../../util/types/NHSUKTypes';
+import { CareCardType } from '../../util/types/govukTypes';
 import HeadingLevel, { HeadingLevelType } from '../../util/HeadingLevel';
 
 interface CareCardProps extends HTMLProps<HTMLDivElement> {
@@ -23,7 +23,7 @@ const genHiddenText = (cardType: CareCardType): string => {
 };
 
 const CareCardContent: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }) => (
-  <div className={classNames('nhsuk-care-card__content', className)} {...rest} />
+  <div className={classNames('govuk-care-card__content', className)} {...rest} />
 );
 
 interface CareCardHeadingProps extends HTMLProps<HTMLHeadingElement> {
@@ -41,22 +41,22 @@ const CareCardHeading: React.FC<CareCardHeadingProps> = ({
 }) => {
   const cardType = useContext(CareCardContext);
   return (
-    <div className="nhsuk-care-card__heading-container">
+    <div className="govuk-care-card__heading-container">
       <HeadingLevel
-        className={classNames('nhsuk-care-card__heading', className)}
+        className={classNames('govuk-care-card__heading', className)}
         headingLevel={headingLevel}
         {...rest}
       >
         <span role={role}>
           {visuallyHiddenText !== false ? (
-            <span className="nhsuk-u-visually-hidden">
+            <span className="govuk-u-visually-hidden">
               {visuallyHiddenText || genHiddenText(cardType)}
             </span>
           ) : null}
           {children}
         </span>
       </HeadingLevel>
-      <span className="nhsuk-care-card__arrow" aria-hidden="true" />
+      <span className="govuk-care-card__arrow" aria-hidden="true" />
     </div>
   );
 };
@@ -73,7 +73,7 @@ interface CareCard extends React.FC<CareCardProps> {
 const CareCard: CareCard = ({
   className, type, children, ...rest
 }) => (
-  <div className={classNames('nhsuk-care-card', `nhsuk-care-card--${type}`, className)} {...rest}>
+  <div className={classNames('govuk-care-card', `govuk-care-card--${type}`, className)} {...rest}>
     <CareCardContext.Provider value={type}>{children}</CareCardContext.Provider>
   </div>
 );

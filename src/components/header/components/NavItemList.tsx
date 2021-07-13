@@ -8,7 +8,7 @@ const NavItemList: React.FC<HTMLProps<HTMLUListElement>> = ({
 }) => (
   <ul
     className={classNames(
-      'nhsuk-header__navigation-list',
+      'govuk-header__navigation-list',
       className,
     )}
     {...rest}

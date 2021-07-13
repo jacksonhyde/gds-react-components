@@ -62,13 +62,13 @@ const Radio: React.FC<RadioProps> = ({
 
   return (
     <>
-      <div className="nhsuk-radios__item">
+      <div className="govuk-radios__item">
         <input
           onChange={(e) => {
             setSelected(radioReference);
             if (onChange) onChange(e);
           }}
-          className={classNames('nhsuk-radios__input', className)}
+          className={classNames('govuk-radios__input', className)}
           id={inputID}
           name={name}
           aria-labelledby={children ? `${inputID}--label` : undefined}
@@ -80,7 +80,7 @@ const Radio: React.FC<RadioProps> = ({
         />
         {children ? (
           <Label
-            className="nhsuk-radios__label"
+            className="govuk-radios__label"
             id={`${inputID}--label`}
             htmlFor={inputID}
             {...labelProps}
@@ -89,14 +89,14 @@ const Radio: React.FC<RadioProps> = ({
           </Label>
         ) : null}
         {hint ? (
-          <Hint className="nhsuk-radios__hint" id={`${inputID}--hint`} {...hintProps}>
+          <Hint className="govuk-radios__hint" id={`${inputID}--hint`} {...hintProps}>
             {hint}
           </Hint>
         ) : null}
       </div>
       {conditional && (shouldShowConditional || forceShowConditional) ? (
         <div
-          className="nhsuk-radios__conditional"
+          className="govuk-radios__conditional govuk-body"
           id={`${inputID}--conditional`}
           {...conditionalWrapperProps}
         >

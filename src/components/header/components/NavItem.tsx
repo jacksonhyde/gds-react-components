@@ -16,12 +16,12 @@ const NavItem: React.FC<NavItemProps> = ({
 }) => (
   <li
     className={classNames(
-      'nhsuk-header__navigation-item',
-      { 'nhsuk-header__navigation-item--for-mobile': mobileOnly },
+      'govuk-header__navigation-item',
+      { 'govuk-header__navigation-item--for-mobile': mobileOnly },
       className,
     )}
   >
-    <Component className="nhsuk-header__navigation-link" {...rest}>
+    <Component className="govuk-header__navigation-link" {...rest}>
       {children}
       <ChevronRightIcon />
     </Component>

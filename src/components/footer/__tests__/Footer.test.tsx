@@ -10,19 +10,19 @@ describe('Footer', () => {
   });
   it('has default visually hidden text', () => {
     const component = mount(<Footer />);
-    expect(component.find('.nhsuk-u-visually-hidden').text()).toBe('Support links');
+    expect(component.find('.govuk-u-visually-hidden').text()).toBe('Support links');
     component.unmount();
   });
 
   it('has disabled visually hidden text', () => {
     const component = mount(<Footer visuallyHiddenText={false} />);
-    expect(component.find('.nhsuk-u-visually-hidden').exists()).toBeFalsy();
+    expect(component.find('.govuk-u-visually-hidden').exists()).toBeFalsy();
     component.unmount();
   });
 
   it('has custom visually hidden text', () => {
     const component = mount(<Footer visuallyHiddenText="Custom" />);
-    expect(component.find('.nhsuk-u-visually-hidden').text()).toBe('Custom');
+    expect(component.find('.govuk-u-visually-hidden').text()).toBe('Custom');
     component.unmount();
   });
 
@@ -35,7 +35,7 @@ describe('Footer', () => {
 
     it('adds class when columns', () => {
       const component = shallow(<Footer.List columns />);
-      expect(component.hasClass('nhsuk-footer__list--three-columns')).toBeTruthy();
+      expect(component.hasClass('govuk-footer__list--three-columns')).toBeTruthy();
       component.unmount();
     });
   });

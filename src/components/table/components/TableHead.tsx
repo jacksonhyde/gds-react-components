@@ -7,7 +7,7 @@ const TableHead: React.FC<HTMLProps<HTMLTableSectionElement>> = ({
   children,
   ...rest
 }) => (
-  <thead className={classNames('nhsuk-table__head', className)} {...rest}>
+  <thead className={classNames('govuk-table__head', className)} {...rest}>
     <TableSectionContext.Provider value={TableSection.HEAD}>
       {children}
     </TableSectionContext.Provider>

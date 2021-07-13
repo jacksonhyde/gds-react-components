@@ -2,22 +2,22 @@
 
 exports[`Footer Footer.Copyright matches snapshot: Footer.Copyright 1`] = `
 <p
-  className="nhsuk-footer__copyright"
+  className="govuk-footer__copyright"
 />
 `;
 
 exports[`Footer Footer.List matches snapshot: Footer.List 1`] = `
 <ul
-  className="nhsuk-footer__list"
+  className="govuk-footer__list"
 />
 `;
 
 exports[`Footer Footer.ListItem matches snapshot: Footer.ListItem 1`] = `
 <li
-  className="nhsuk-footer__list-item"
+  className="govuk-footer__list-item"
 >
   <a
-    className="nhsuk-footer__list-item-link"
+    className="govuk-footer__list-item-link"
   />
 </li>
 `;
@@ -25,11 +25,11 @@ exports[`Footer Footer.ListItem matches snapshot: Footer.ListItem 1`] = `
 exports[`Footer matches snapshot: Footer 1`] = `
 <footer>
   <div
-    className="nhsuk-footer"
+    className="govuk-footer"
   >
     <Container>
       <h2
-        className="nhsuk-u-visually-hidden"
+        className="govuk-u-visually-hidden"
       >
         Support links
       </h2>

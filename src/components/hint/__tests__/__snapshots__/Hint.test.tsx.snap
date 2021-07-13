@@ -2,7 +2,7 @@
 
 exports[`Hint matches snapshot: Hint 1`] = `
 <div
-  className="nhsuk-hint"
+  className="govuk-hint"
 >
   Text
 </div>

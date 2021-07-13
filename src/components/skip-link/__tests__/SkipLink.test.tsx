@@ -20,18 +20,18 @@ describe('SkipLink', () => {
 
   it('sets the href to #maincontent by default', () => {
     const component = mount(<SkipLink />);
-    expect(component.find('.nhsuk-skip-link').prop('href')).toBe('#maincontent');
+    expect(component.find('.govuk-skip-link').prop('href')).toBe('#maincontent');
   });
 
   it('calls onClick callback when clicked', () => {
     const onClick = jest.fn();
     const component = mount(<SkipLink onClick={onClick} />);
-    component.find('.nhsuk-skip-link').simulate('click');
+    component.find('.govuk-skip-link').simulate('click');
     expect(onClick).toHaveBeenCalled();
   });
 
   it('does not set the href to #maincontent if disableDefaultBehaviour is set', () => {
     const component = mount(<SkipLink disableDefaultBehaviour />);
-    expect(component.find('.nhsuk-skip-link').prop('href')).toBeUndefined();
+    expect(component.find('.govuk-skip-link').prop('href')).toBeUndefined();
   });
 });

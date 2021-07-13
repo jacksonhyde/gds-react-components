@@ -8,7 +8,7 @@ const NavTitle: React.FC<HTMLProps<HTMLParagraphElement>> = ({
 }) => (
   <p
     className={classNames(
-      'nhsuk-header__navigation-title',
+      'govuk-header__navigation-title',
       className,
     )}
     {...rest}

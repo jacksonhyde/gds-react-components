@@ -2,15 +2,15 @@
 
 exports[`ActionLink matches snapshot: ActionLink 1`] = `
 <div
-  className="nhsuk-action-link"
+  className="govuk-action-link"
 >
   <a
-    className="nhsuk-action-link__link"
+    className="govuk-action-link__link"
     href="/test"
   >
     <ArrowRightCircle />
     <span
-      className="nhsuk-action-link__text"
+      className="govuk-action-link__text"
     >
       Test
     </span>

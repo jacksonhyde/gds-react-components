@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-react-components",
-  "version": "2.0.0-beta.1",
+  "version": "0.0.1",
   "author": {
     "email": "thomas.judd-cooper1@nhs.net",
     "name": "Thomas Judd-Cooper",
@@ -37,6 +37,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "govuk-frontend": "^3.13.0",
     "jest": "^26.6.3",
     "jest-axe": "^4.1.0",
     "nhsuk-frontend": "4.1.0",
@@ -60,11 +61,12 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "file-loader": "^6.2.0"
   },
   "scripts": {
     "cleanup": "rm -rf dist/ > /dev/null && rm -rf lib/ > /dev/null",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p -s node_modules/govuk-frontend/govuk/ 6006",
     "build:dist": "rollup -c",
     "build:lib": "NODE_ENV=production babel src --out-dir lib --extensions \".ts,.tsx\" --ignore \"**/__tests__,**/__mocks__,**/setupTests.ts\"",
     "build": "yarn cleanup && yarn build:dist && yarn build:lib",

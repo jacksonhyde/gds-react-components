@@ -19,7 +19,7 @@ const Select: ISelect = ({ children, ...rest }) => (
       className, error, selectRef, ...restRenderProps
     }) => (
       <select
-        className={classNames('nhsuk-select', { 'nhsuk-select--error': error }, className)}
+        className={classNames('govuk-select', { 'govuk-select--error': error }, className)}
         ref={selectRef}
         {...restRenderProps}
       >

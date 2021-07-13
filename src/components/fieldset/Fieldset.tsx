@@ -1,13 +1,13 @@
 import React, { HTMLProps, PureComponent } from 'react';
 import classNames from 'classnames';
-import { NHSUKSize } from '../../util/types/NHSUKTypes';
+import { govukSize } from '../../util/types/govukTypes';
 import HeadingLevel, { HeadingLevelType } from '../../util/HeadingLevel';
 import FieldsetContext, { IFieldsetContext } from './FieldsetContext';
 
 interface LegendProps extends Omit<HTMLProps<HTMLLegendElement>, 'size'> {
   isPageHeading?: boolean;
   headingLevel?: HeadingLevelType;
-  size?: NHSUKSize;
+  size?: govukSize;
 }
 
 const Legend: React.FC<LegendProps> = ({
@@ -20,17 +20,17 @@ const Legend: React.FC<LegendProps> = ({
 }) => (
   <legend
     className={classNames(
-      'nhsuk-fieldset__legend',
+      'govuk-fieldset__legend',
       {
-        'nhsuk-fieldset__legend--xl': isPageHeading && !size,
+        'govuk-fieldset__legend--xl': isPageHeading && !size,
       },
-      { [`nhsuk-fieldset__legend--${size}`]: size },
+      { [`govuk-fieldset__legend--${size}`]: size },
       className,
     )}
     {...rest}
   >
     {isPageHeading ? (
-      <HeadingLevel className="nhsuk-fieldset__heading" headingLevel={headingLevel}>
+      <HeadingLevel className="govuk-fieldset__heading" headingLevel={headingLevel}>
         {children}
       </HeadingLevel>
     ) : (
@@ -109,14 +109,14 @@ class Fieldset extends PureComponent<FieldsetProps, FieldsetState> {
       <FieldsetContext.Provider value={contextValue}>
         {containsFormElements ? (
           <div
-            className={classNames('nhsuk-form-group', {
-              'nhsuk-form-group--error': disableErrorLine ? false : containsError,
+            className={classNames('govuk-form-group', {
+              'govuk-form-group--error': disableErrorLine ? false : containsError,
             })}
           >
-            <fieldset className={classNames('nhsuk-fieldset', className)} {...rest} />
+            <fieldset className={classNames('govuk-fieldset', className)} {...rest} />
           </div>
         ) : (
-          <fieldset className={classNames('nhsuk-fieldset', className)} {...rest} />
+          <fieldset className={classNames('govuk-fieldset', className)} {...rest} />
         )}
       </FieldsetContext.Provider>
     );

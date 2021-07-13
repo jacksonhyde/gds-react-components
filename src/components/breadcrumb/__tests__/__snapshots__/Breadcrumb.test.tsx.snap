@@ -3,11 +3,11 @@
 exports[`Breadcrumb base element matches snapshot: BaseBreadcrumbs 1`] = `
 <nav
   aria-label="Breadcrumb"
-  className="nhsuk-breadcrumb"
+  className="govuk-breadcrumb"
 >
   <Container>
     <ol
-      className="nhsuk-breadcrumb__list"
+      className="govuk-breadcrumb__list"
     />
   </Container>
 </nav>
@@ -19,24 +19,24 @@ exports[`Breadcrumb renders with children: BreadcrumbWithChildren 1`] = `
 >
   <nav
     aria-label="Breadcrumb"
-    className="nhsuk-breadcrumb"
+    className="govuk-breadcrumb"
   >
     <Container>
       <div
-        className="nhsuk-width-container"
+        className="govuk-width-container"
       >
         <ol
-          className="nhsuk-breadcrumb__list"
+          className="govuk-breadcrumb__list"
         >
           <Item
             href="/bc-1"
             key=".0"
           >
             <li
-              className="nhsuk-breadcrumb__item"
+              className="govuk-breadcrumb__item"
             >
               <a
-                className="nhsuk-breadcrumb__link"
+                className="govuk-breadcrumb__link"
                 href="/bc-1"
               >
                 Breadcrumb 1
@@ -48,10 +48,10 @@ exports[`Breadcrumb renders with children: BreadcrumbWithChildren 1`] = `
             key=".1"
           >
             <li
-              className="nhsuk-breadcrumb__item"
+              className="govuk-breadcrumb__item"
             >
               <a
-                className="nhsuk-breadcrumb__link"
+                className="govuk-breadcrumb__link"
                 href="/bc-2"
               >
                 Breadcrumb 2

@@ -2,10 +2,10 @@
 
 exports[`BackLink matches snapshot: BackLink 1`] = `
 <div
-  className="nhsuk-back-link"
+  className="govuk-back-link"
 >
   <a
-    className="nhsuk-back-link__link"
+    className="govuk-back-link__link"
     href="/back"
   >
     <ChevronLeft />

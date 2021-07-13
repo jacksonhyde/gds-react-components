@@ -63,9 +63,9 @@ const Box: React.FC<BoxProps> = ({
 
   return (
     <>
-      <div className="nhsuk-checkboxes__item">
+      <div className="govuk-checkboxes__item">
         <input
-          className="nhsuk-checkboxes__input"
+          className="govuk-checkboxes__input"
           onChange={(e) => {
             if (checked === undefined) setShowConditional(e.target.checked);
             if (onChange) onChange(e);
@@ -79,7 +79,7 @@ const Box: React.FC<BoxProps> = ({
         />
         {children ? (
           <Label
-            className={classNames('nhsuk-checkboxes__label', labelClassName)}
+            className={classNames('govuk-checkboxes__label', labelClassName)}
             id={`${inputID}--label`}
             htmlFor={inputID}
             {...restLabelProps}
@@ -88,14 +88,14 @@ const Box: React.FC<BoxProps> = ({
           </Label>
         ) : null}
         {hint ? (
-          <Hint className={classNames('nhsuk-checkboxes__hint', hintClassName)} {...restHintProps}>
+          <Hint className={classNames('govuk-checkboxes__hint', hintClassName)} {...restHintProps}>
             {hint}
           </Hint>
         ) : null}
       </div>
       {conditional && (showConditional || forceShowConditional) ? (
         <div
-          className={classNames('nhsuk-radios__conditional', conditionalClassName)}
+          className={classNames('govuk-radios__conditional govuk-body', conditionalClassName)}
           id={`${inputID}--conditional`}
           {...restConditionalProps}
         >

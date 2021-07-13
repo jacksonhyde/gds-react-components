@@ -2,14 +2,14 @@
 
 exports[`ListPanel ListPanel.Item matches snapshot: ListPanel.Item 1`] = `
 <li
-  className="nhsuk-list-panel__item"
+  className="govuk-list-panel__item"
 />
 `;
 
 exports[`ListPanel ListPanel.LinkItem matches snapshot: ListPanel.LinkItem 1`] = `
 <PanelItem>
   <a
-    className="nhsuk-list-panel__link"
+    className="govuk-list-panel__link"
   />
 </PanelItem>
 `;
@@ -17,10 +17,10 @@ exports[`ListPanel ListPanel.LinkItem matches snapshot: ListPanel.LinkItem 1`] =
 exports[`ListPanel ListPanel.Panel matches snapshot: ListPanel.Panel 1`] = `
 <li>
   <div
-    className="nhsuk-list-panel"
+    className="govuk-list-panel"
   >
     <ul
-      className="nhsuk-list-panel__list"
+      className="govuk-list-panel__list"
     />
   </div>
 </li>
@@ -28,6 +28,6 @@ exports[`ListPanel ListPanel.Panel matches snapshot: ListPanel.Panel 1`] = `
 
 exports[`ListPanel matches snapshot: ListPanel 1`] = `
 <ol
-  className="nhsuk-list"
+  className="govuk-list"
 />
 `;

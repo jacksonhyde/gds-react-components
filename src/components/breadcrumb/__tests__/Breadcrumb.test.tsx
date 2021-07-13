@@ -30,17 +30,17 @@ describe('Breadcrumb', () => {
       </Breadcrumb>,
     );
     const breadcrumbList = component
-      .find('.nhsuk-breadcrumb__list')
+      .find('.govuk-breadcrumb__list')
       .render()
       .children();
 
     expect(breadcrumbList.length).toBe(2);
     breadcrumbList.toArray().forEach((child) => {
-      expect(child.attribs.class).toBe('nhsuk-breadcrumb__item');
+      expect(child.attribs.class).toBe('govuk-breadcrumb__item');
     });
 
     expect(component.find('#otherElement').text()).toEqual('Test Element');
-    expect(component.find('.nhsuk-breadcrumb__back').text()).toBe('Back');
+    expect(component.find('.govuk-breadcrumb__back').text()).toBe('Back');
   });
 
   it('passes through other children fine', () => {

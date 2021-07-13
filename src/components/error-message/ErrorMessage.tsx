@@ -11,9 +11,9 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({
   children,
   ...rest
 }) => (
-  <span className={classNames('nhsuk-error-message', className)} {...rest}>
+  <span className={classNames('govuk-error-message', className)} {...rest}>
     {visuallyHiddenText !== false ? (
-      <span className="nhsuk-u-visually-hidden">{visuallyHiddenText}</span>
+      <span className="govuk-u-visually-hidden">{visuallyHiddenText}</span>
     ) : null}
     {children}
   </span>

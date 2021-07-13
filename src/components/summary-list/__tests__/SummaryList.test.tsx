@@ -11,7 +11,7 @@ describe('SummaryList', () => {
 
   it('adds css classes when noBorder prop supplied', () => {
     const element = shallow(<SummaryList noBorder />);
-    expect(element.hasClass('nhsuk-summary-list--no-border')).toBeTruthy();
+    expect(element.hasClass('govuk-summary-list--no-border')).toBeTruthy();
     element.unmount();
   });
 

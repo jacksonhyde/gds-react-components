@@ -4,7 +4,7 @@ import classNames from 'classnames';
 export type HintProps = HTMLProps<HTMLDivElement>;
 
 const Hint: React.FC<HintProps> = ({ className, ...rest }) => (
-  <div className={classNames('nhsuk-hint', className)} {...rest} />
+  <div className={classNames('govuk-hint', className)} {...rest} />
 );
 
 export default Hint;

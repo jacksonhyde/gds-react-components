@@ -38,13 +38,13 @@ describe('CareCard', () => {
       </CareCard>,
     );
 
-    expect(nonUrgentCard.find('.nhsuk-u-visually-hidden').text()).toEqual('Non-urgent advice: ');
-    expect(urgentCard.find('.nhsuk-u-visually-hidden').text()).toEqual('Urgent advice: ');
-    expect(immediateCard.find('.nhsuk-u-visually-hidden').text()).toEqual(
+    expect(nonUrgentCard.find('.govuk-u-visually-hidden').text()).toEqual('Non-urgent advice: ');
+    expect(urgentCard.find('.govuk-u-visually-hidden').text()).toEqual('Urgent advice: ');
+    expect(immediateCard.find('.govuk-u-visually-hidden').text()).toEqual(
       'Immediate action required: ',
     );
-    expect(withCustomHiddentext.find('.nhsuk-u-visually-hidden').text()).toEqual('Custom');
-    expect(withoutHiddenText.find('.nhsuk-u-visually-hidden').exists()).toBeFalsy();
+    expect(withCustomHiddentext.find('.govuk-u-visually-hidden').text()).toEqual('Custom');
+    expect(withoutHiddenText.find('.govuk-u-visually-hidden').exists()).toBeFalsy();
 
     nonUrgentCard.unmount();
     urgentCard.unmount();
@@ -58,9 +58,9 @@ describe('CareCard', () => {
     const urgentCard = shallow(<CareCard type="urgent" />);
     const immediateCard = shallow(<CareCard type="immediate" />);
 
-    expect(nonUrgentCard.hasClass('nhsuk-care-card--non-urgent')).toBeTruthy();
-    expect(urgentCard.hasClass('nhsuk-care-card--urgent')).toBeTruthy();
-    expect(immediateCard.hasClass('nhsuk-care-card--immediate')).toBeTruthy();
+    expect(nonUrgentCard.hasClass('govuk-care-card--non-urgent')).toBeTruthy();
+    expect(urgentCard.hasClass('govuk-care-card--urgent')).toBeTruthy();
+    expect(immediateCard.hasClass('govuk-care-card--immediate')).toBeTruthy();
 
     nonUrgentCard.unmount();
     urgentCard.unmount();
@@ -73,7 +73,7 @@ describe('CareCard', () => {
         <CareCard.Content>Test Content</CareCard.Content>
       </CareCard>,
     );
-    expect(component.find('.nhsuk-care-card__content').text()).toEqual('Test Content');
+    expect(component.find('.govuk-care-card__content').text()).toEqual('Test Content');
     component.unmount();
   });
 });

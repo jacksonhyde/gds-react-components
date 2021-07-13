@@ -4,7 +4,7 @@ exports[`Panel matches snapshot: Panel 1`] = `
 <Panel>
   <BasePanel>
     <div
-      className="nhsuk-panel"
+      className="govuk-panel"
     />
   </BasePanel>
 </Panel>

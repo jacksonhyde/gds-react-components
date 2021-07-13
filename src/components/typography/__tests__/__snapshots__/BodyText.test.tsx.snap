@@ -2,7 +2,7 @@
 
 exports[`BodyText matches snapshot 1`] = `
 <p
-  className="nhsuk-body"
+  className="govuk-body"
 >
   Text
 </p>

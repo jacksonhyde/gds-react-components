@@ -1,4 +1,4 @@
-export type NHSUKSize = 's' | 'm' | 'l' | 'xl';
+export type govukSize = 's' | 'm' | 'l' | 'xl';
 
 export type InputWidth = '2' | '3' | '4' | '5' | '10' | '20' | '30' | 2 | 3 | 4 | 5 | 10 | 20 | 30;
 

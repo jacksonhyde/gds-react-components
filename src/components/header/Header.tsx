@@ -24,7 +24,7 @@ const BaseHeaderLogo: React.FC<OrganisationalLogoProps & NHSLogoNavProps> = (pro
 };
 
 const HeaderContainer: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }) => (
-  <Container className={classNames('nhsuk-header__container', className)} {...rest} />
+  <Container className={classNames('govuk-header__container', className)} {...rest} />
 );
 
 interface HeaderProps extends HTMLProps<HTMLDivElement> {
@@ -130,10 +130,10 @@ class Header extends PureComponent<HeaderProps, HeaderState> {
     return (
       <header
         className={classNames(
-          'nhsuk-header',
-          { 'nhsuk-header--transactional': transactional },
-          { 'nhsuk-header--organisation': orgName },
-          { 'nhsuk-header--white': white },
+          'govuk-header',
+          { 'govuk-header--transactional': transactional },
+          { 'govuk-header--organisation': orgName },
+          { 'govuk-header--white': white },
           className,
         )}
         {...rest}

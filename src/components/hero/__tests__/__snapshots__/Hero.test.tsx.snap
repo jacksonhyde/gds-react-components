@@ -5,11 +5,11 @@ exports[`Hero Hero.Heading matches snapshot: Hero.Heading 1`] = `
   headingLevel="h1"
 >
   <HeadingLevel
-    className="nhsuk-u-margin-bottom-3"
+    className="govuk-u-margin-bottom-3"
     headingLevel="h1"
   >
     <h1
-      className="nhsuk-u-margin-bottom-3"
+      className="govuk-u-margin-bottom-3"
     >
       Text
     </h1>
@@ -20,7 +20,7 @@ exports[`Hero Hero.Heading matches snapshot: Hero.Heading 1`] = `
 exports[`Hero Hero.Text matches snapshot: Hero.Text 1`] = `
 <HeroText>
   <p
-    className="nhsuk-body-l nhsuk-u-margin-bottom-0"
+    className="govuk-body-l govuk-u-margin-bottom-0"
   >
     Text
   </p>
@@ -29,7 +29,7 @@ exports[`Hero Hero.Text matches snapshot: Hero.Text 1`] = `
 
 exports[`Hero matches snapshot: Hero 1`] = `
 <section
-  className="nhsuk-hero"
+  className="govuk-hero"
 >
   <HeroContent
     hasImage={false}

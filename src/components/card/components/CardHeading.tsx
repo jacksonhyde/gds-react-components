@@ -12,8 +12,8 @@ const CardHeading: React.FC<CardHeadingProps> = ({ className, ...rest }) => {
   return (
     <HeadingLevel
       className={classNames(
-        'nhsuk-card__heading',
-        { 'nhsuk-card__heading--feature': feature },
+        'govuk-card__heading',
+        { 'govuk-card__heading--feature': feature },
         className,
       )}
       {...rest}

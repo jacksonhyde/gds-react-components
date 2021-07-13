@@ -13,10 +13,10 @@ const WarningCalloutLabel: React.FC<WarningCalloutLabelProps> = ({
   children,
   ...rest
 }) => (
-  <HeadingLevel className={classNames('nhsuk-warning-callout__label', className)} {...rest}>
+  <HeadingLevel className={classNames('govuk-warning-callout__label', className)} {...rest}>
     {/* eslint-disable-next-line jsx-a11y/aria-role */}
     <span role="text">
-      {visuallyHiddenText && <span className="nhsuk-u-visually-hidden">{visuallyHiddenText}</span>}
+      {visuallyHiddenText && <span className="govuk-u-visually-hidden">{visuallyHiddenText}</span>}
       {children}
     </span>
   </HeadingLevel>
@@ -31,7 +31,7 @@ interface IWarningCallout extends React.FC<HTMLProps<HTMLDivElement>> {
 }
 
 const WarningCallout: IWarningCallout = ({ className, ...rest }) => (
-  <div className={classNames('nhsuk-warning-callout', className)} {...rest} />
+  <div className={classNames('govuk-warning-callout', className)} {...rest} />
 );
 
 WarningCallout.Label = WarningCalloutLabel;

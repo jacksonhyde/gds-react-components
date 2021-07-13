@@ -7,7 +7,7 @@ describe('BodyText', () => {
     const element = shallow(<BodyText>Text</BodyText>);
     expect(element.text()).toBe('Text');
     expect(element).toMatchSnapshot();
-    expect(element.hasClass('nhsuk-body')).toBeTruthy();
+    expect(element.hasClass('govuk-body')).toBeTruthy();
     element.unmount();
   });
 });

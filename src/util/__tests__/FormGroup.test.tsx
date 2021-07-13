@@ -209,10 +209,10 @@ describe('FormGroup', () => {
     );
 
     expect(
-      booleanErrorComponent.find('div.nhsuk-form-group').hasClass('nhsuk-form-group--error'),
+      booleanErrorComponent.find('div.govuk-form-group').hasClass('govuk-form-group--error'),
     ).toBeTruthy();
     expect(
-      stringErrorComponent.find('div.nhsuk-form-group').hasClass('nhsuk-form-group--error'),
+      stringErrorComponent.find('div.govuk-form-group').hasClass('govuk-form-group--error'),
     ).toBeTruthy();
 
     expect(booleanErrorComponent.find('ErrorMessage')).toHaveLength(0);

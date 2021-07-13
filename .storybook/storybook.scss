@@ -1,16 +1,14 @@
 // Also import styles for deprecated Panel and Promo
-@import '../node_modules/nhsuk-frontend-legacy/packages/core/all.scss';
-@import '../node_modules/nhsuk-frontend-legacy/packages/components/panel/panel';
-@import '../node_modules/nhsuk-frontend-legacy/packages/components/promo/promo';
+@import '../node_modules/govuk-frontend/govuk/all';
 
-// Allow current nhsuk styles to override legacy
-@import '../node_modules/nhsuk-frontend/packages/nhsuk.scss';
+// Allow current govuk styles to override legacy
 
 .tag-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 
-  & > .nhsuk-tag {
+  & > .govuk-tag {
     margin-bottom: 10px;
 
     &:last-of-type {
