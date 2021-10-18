@@ -1,6 +1,6 @@
 import React, { HTMLProps, PureComponent } from 'react';
 import classNames from 'classnames';
-import { govukSize } from '../../util/types/govukTypes';
+import { govukSize } from '../../util/types/NHSUKTypes';
 import HeadingLevel, { HeadingLevelType } from '../../util/HeadingLevel';
 import FieldsetContext, { IFieldsetContext } from './FieldsetContext';
 

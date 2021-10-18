@@ -1,6 +1,6 @@
 import React, { HTMLProps } from 'react';
 import classNames from 'classnames';
-import { govukSize } from '../../util/types/govukTypes';
+import { govukSize } from '../../util/types/NHSUKTypes';
 
 export interface LabelProps extends Omit<HTMLProps<HTMLLabelElement>, 'size'> {
   bold?: boolean;
