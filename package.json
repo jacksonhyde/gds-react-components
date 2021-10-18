@@ -75,7 +75,8 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' 'stories/**/*.{js,ts,tsx}' --fix",
     "lint:ci": "eslint 'src/**/*.{js,ts,tsx}' 'stories/**/*.{js,ts,tsx}'",
     "build-storybook": "build-storybook",
-    "prepublishOnly": "yarn lint:ci && yarn test:ci && yarn start-storybook --smoke-test"
+    "prepublishOnly": "yarn lint:ci && yarn test:ci && yarn start-storybook --smoke-test",
+    "prepare": "rollup -c"
   },
   "files": [
     "dist",
