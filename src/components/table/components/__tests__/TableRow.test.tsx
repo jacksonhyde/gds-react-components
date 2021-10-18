@@ -47,7 +47,7 @@ describe('Table.Row', () => {
     assertCellText(wrapper, 1, 'a 1');
     assertCellText(wrapper, 2, 'b 2');
     assertCellText(wrapper, 3, 'c 3');
-    expect(wrapper.find('.nhsuk-table-responsive__heading').length).toBe(3);
+    expect(wrapper.find('.govuk-table-responsive__heading').length).toBe(3);
   
     wrapper.unmount();
   });
@@ -77,7 +77,7 @@ describe('Table.Row', () => {
     assertCellText(wrapper, 1, '1');
     assertCellText(wrapper, 2, '2');
     assertCellText(wrapper, 3, '3');
-    expect(wrapper.find('.nhsuk-table-responsive__heading').length).toBe(0);
+    expect(wrapper.find('.govuk-table-responsive__heading').length).toBe(0);
   
     wrapper.unmount();
   });
@@ -163,7 +163,7 @@ describe('Table.Row', () => {
     assertCellText(wrapper, 1, '1');
     assertCellText(wrapper, 2, '2');
     assertCellText(wrapper, 3, '3');
-    expect(wrapper.find('.nhsuk-table-responsive__heading').length).toBe(0);
+    expect(wrapper.find('.govuk-table-responsive__heading').length).toBe(0);
   
     wrapper.unmount();
   });

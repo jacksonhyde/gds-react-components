@@ -18,8 +18,8 @@ describe('Promo', () => {
     };
     const element = mount(<Promo imageProps={imageProps} imageSrc="image.png" />);
     const renderedElement = element.render();
-    expect(renderedElement.find('.nhsuk-promo__img').hasClass('className')).toBeTruthy();
-    expect(renderedElement.find('.nhsuk-promo__img').prop('src')).toBe('image.png');
+    expect(renderedElement.find('.govuk-promo__img').hasClass('className')).toBeTruthy();
+    expect(renderedElement.find('.govuk-promo__img').prop('src')).toBe('image.png');
 
     element.unmount();
   });
@@ -62,7 +62,7 @@ describe('Promo', () => {
           <Promo />
         </Promo.Group>,
       );
-      expect(twoColumns.find('.nhsuk-grid-column-one-half').length).toBe(2);
+      expect(twoColumns.find('.govuk-grid-column-one-half').length).toBe(2);
       twoColumns.unmount();
 
       const threeColumns = mount(
@@ -72,7 +72,7 @@ describe('Promo', () => {
           <Promo />
         </Promo.Group>,
       );
-      expect(threeColumns.find('.nhsuk-grid-column-one-third').length).toBe(3);
+      expect(threeColumns.find('.govuk-grid-column-one-third').length).toBe(3);
       threeColumns.unmount();
 
       const fourColumns = mount(
@@ -83,7 +83,7 @@ describe('Promo', () => {
           <Promo />
         </Promo.Group>,
       );
-      expect(fourColumns.find('.nhsuk-grid-column-one-quarter').length).toBe(4);
+      expect(fourColumns.find('.govuk-grid-column-one-quarter').length).toBe(4);
       fourColumns.unmount();
 
       const fourColumnsWithOther = mount(
@@ -95,7 +95,7 @@ describe('Promo', () => {
           <Promo />
         </Promo.Group>,
       );
-      expect(fourColumnsWithOther.find('.nhsuk-grid-column-one-quarter').length).toBe(4);
+      expect(fourColumnsWithOther.find('.govuk-grid-column-one-quarter').length).toBe(4);
       expect(fourColumnsWithOther.text()).toBe('Test');
       fourColumnsWithOther.unmount();
 
@@ -108,7 +108,7 @@ describe('Promo', () => {
           <Promo />
         </Promo.Group>,
       );
-      expect(fiveColumns.find('.nhsuk-grid-column-full').length).toBe(5);
+      expect(fiveColumns.find('.govuk-grid-column-full').length).toBe(5);
       fiveColumns.unmount();
     });
   });

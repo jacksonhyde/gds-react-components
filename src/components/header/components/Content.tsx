@@ -6,7 +6,7 @@ const Content: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }) =>
   const { searchOpen } = useContext<IHeaderContext>(HeaderContext);
   return (
     <div
-      className={classNames('nhsuk-header__content', { 'js-show': searchOpen }, className)}
+      className={classNames('govuk-header__content', { 'js-show': searchOpen }, className)}
       {...rest}
     />
   );

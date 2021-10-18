@@ -17,7 +17,7 @@ interface TagProps extends HTMLProps<HTMLSpanElement> {
 
 const Tag: React.FC<TagProps> = ({ className, color, ...rest }) => (
   <strong
-    className={classNames('nhsuk-tag', { [`nhsuk-tag--${color}`]: color }, className)}
+    className={classNames('govuk-tag', { [`govuk-tag--${color}`]: color }, className)}
     {...rest}
   />
 );

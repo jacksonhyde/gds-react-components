@@ -91,7 +91,7 @@ export const RadiosWithADivider = (): JSX.Element => (
     <Fieldset.Legend>How do you want to sign in?</Fieldset.Legend>
     <Radios name="example" id="example-divider">
       <Radios.Radio value="government-gateway">Use Government Gateway</Radios.Radio>
-      <Radios.Radio value="nhsuk-login">Use NHS.UK login</Radios.Radio>
+      <Radios.Radio value="govuk-login">Use NHS.UK login</Radios.Radio>
       <Radios.Divider>or</Radios.Divider>
       <Radios.Radio value="create-account">Create an account</Radios.Radio>
     </Radios>
@@ -109,7 +109,7 @@ export const RadiosWithHintsOnItems = (): JSX.Element => (
         Use Government Gateway
       </Radios.Radio>
       <Radios.Radio
-        value="nhsuk-login"
+        value="govuk-login"
         hint="You’ll have an account if you’ve already proved your identity with either Barclays, CitizenSafe, Digidentity, Experian, Post Office, Royal Mail or SecureIdentity."
       >
         Use NHS.UK login

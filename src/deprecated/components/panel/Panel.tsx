@@ -28,15 +28,15 @@ const BasePanel: React.FC<PanelProps> = ({
   return (
     <div
       className={classNames(
-        { 'nhsuk-panel': !label },
-        { 'nhsuk-panel--grey': grey },
-        { 'nhsuk-panel-with-label': label },
+        { 'govuk-panel': !label },
+        { 'govuk-panel--grey': grey },
+        { 'govuk-panel-with-label': label },
         className,
       )}
       {...rest}
     >
       {label ? (
-        <h3 className="nhsuk-panel-with-label__label" {...labelProps}>
+        <h3 className="govuk-panel-with-label__label" {...labelProps}>
           {label}
         </h3>
       ) : null}
@@ -65,7 +65,7 @@ const Panel: Panel = (props) => {
         break;
     }
     return (
-      <Col width={panelWidth} className="nhsuk-panel-group__item">
+      <Col width={panelWidth} className="govuk-panel-group__item">
         <BasePanel {...props} />
       </Col>
     );
@@ -81,7 +81,7 @@ const PanelGroup: React.FC<HTMLProps<HTMLDivElement>> = ({ className, children, 
     }
   });
   return (
-    <Row className={classNames('nhsuk-panel-group', className)} {...rest}>
+    <Row className={classNames('govuk-panel-group', className)} {...rest}>
       <PanelContext.Provider value={{ panelCount }}>{children}</PanelContext.Provider>
     </Row>
   );

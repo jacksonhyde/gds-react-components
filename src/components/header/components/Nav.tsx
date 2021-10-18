@@ -12,21 +12,21 @@ const Nav: React.FC<HTMLProps<HTMLDivElement>> = ({
   return (
     <nav
       className={classNames(
-        'nhsuk-header__navigation',
+        'govuk-header__navigation',
         { 'js-show': open !== undefined ? open : menuOpen },
         className,
       )}
       {...rest}
     >
       <Container>
-        <p className="nhsuk-header__navigation-title">
+        <p className="govuk-header__navigation-title">
           <span>Menu</span>
-          <button className="nhsuk-header__navigation-close" type="button" onClick={toggleMenu}>
+          <button className="govuk-header__navigation-close" type="button" onClick={toggleMenu}>
             <CloseIcon />
-            <span className="nhsuk-u-visually-hidden">Close menu</span>
+            <span className="govuk-u-visually-hidden">Close menu</span>
           </button>
         </p>
-        <ul className="nhsuk-header__navigation-list">{children}</ul>
+        <ul className="govuk-header__navigation-list">{children}</ul>
       </Container>
     </nav>
   );

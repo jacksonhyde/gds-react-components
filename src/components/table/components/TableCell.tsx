@@ -23,7 +23,7 @@ const TableCell: React.FC<TableCellProps> = ({
   const section = useContext(TableSectionContext);
   useDevWarning(CellOutsideOfSectionWarning, () => section === TableSection.NONE);
 
-  const cellClass = section === TableSection.HEAD ? 'nhsuk-table__header' : 'nhsuk-table__cell';
+  const cellClass = section === TableSection.HEAD ? 'govuk-table__header' : 'govuk-table__cell';
   const classes = classNames(cellClass, { [`${cellClass}--numeric`]: isNumeric }, className);
 
   switch (section) {
@@ -44,7 +44,7 @@ const TableCell: React.FC<TableCellProps> = ({
           {...rest}
         >
           {_responsive && (
-            <span className="nhsuk-table-responsive__heading">{_responsiveHeading}</span>
+            <span className="govuk-table-responsive__heading">{_responsiveHeading}</span>
           )}
           {children}
         </td>

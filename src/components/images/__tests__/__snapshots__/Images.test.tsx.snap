@@ -2,10 +2,10 @@
 
 exports[`Images matches snapshot: Images 1`] = `
 <figure
-  className="nhsuk-image"
+  className="govuk-image"
 >
   <img
-    className="nhsuk-image__img"
+    className="govuk-image__img"
   />
 </figure>
 `;

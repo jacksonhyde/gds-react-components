@@ -10,14 +10,14 @@ exports[`Table.Panel adds header when prop added 1`] = `
   }
 >
   <div
-    className="nhsuk-table__panel-with-heading-tab"
+    className="govuk-table__panel-with-heading-tab"
   >
     <HeadingLevel
-      className="nhsuk-table__heading-tab"
+      className="govuk-table__heading-tab"
       headingLevel="h2"
     >
       <h2
-        className="nhsuk-table__heading-tab"
+        className="govuk-table__heading-tab"
       >
         TestHeading
       </h2>
@@ -28,6 +28,6 @@ exports[`Table.Panel adds header when prop added 1`] = `
 
 exports[`Table.Panel matches snapshot 1`] = `
 <div
-  className="nhsuk-table__panel-with-heading-tab"
+  className="govuk-table__panel-with-heading-tab"
 />
 `;

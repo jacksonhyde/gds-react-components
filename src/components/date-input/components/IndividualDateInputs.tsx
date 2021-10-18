@@ -61,10 +61,10 @@ const IndividualDateInput: React.FC<IndividualDateInputProps> = ({
   };
 
   return (
-    <div className="nhsuk-date-input__item">
-      <div className="nhsuk-form-group">
+    <div className="govuk-date-input__item">
+      <div className="govuk-form-group">
         <Label
-          className={classNames('nhsuk-date-input__label', labelClassName)}
+          className={classNames('govuk-date-input__label', labelClassName)}
           id={`${inputID}--label`}
           htmlFor={inputID}
           {...restLabelProps}
@@ -73,10 +73,10 @@ const IndividualDateInput: React.FC<IndividualDateInputProps> = ({
         </Label>
         <input
           className={classNames(
-            'nhsuk-input nhsuk-date-input__input',
-            { 'nhsuk-input--width-2': inputType === 'day' || inputType === 'month' },
-            { 'nhsuk-input--width-4': inputType === 'year' },
-            { 'nhsuk-input--error': error === undefined ? ctxError : error },
+            'govuk-input govuk-date-input__input',
+            { 'govuk-input--width-2': inputType === 'day' || inputType === 'month' },
+            { 'govuk-input--width-4': inputType === 'year' },
+            { 'govuk-input--error': error === undefined ? ctxError : error },
             className,
           )}
           value={inputValue}

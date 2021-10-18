@@ -11,19 +11,19 @@ describe('ContentsList', () => {
 
   it('renders default hidden text', () => {
     const element = shallow(<ContentsList />);
-    expect(element.find('.nhsuk-u-visually-hidden').text()).toEqual('Contents');
+    expect(element.find('.govuk-u-visually-hidden').text()).toEqual('Contents');
     element.unmount();
   });
 
   it('renders custom hidden text', () => {
     const element = shallow(<ContentsList visuallyHiddenText="Custom" />);
-    expect(element.find('.nhsuk-u-visually-hidden').text()).toEqual('Custom');
+    expect(element.find('.govuk-u-visually-hidden').text()).toEqual('Custom');
     element.unmount();
   });
 
   it('disables hidden text', () => {
     const element = shallow(<ContentsList visuallyHiddenText={false} />);
-    expect(element.find('.nhsuk-u-visually-hidden').exists()).toBeFalsy();
+    expect(element.find('.govuk-u-visually-hidden').exists()).toBeFalsy();
     element.unmount();
   });
 
@@ -38,7 +38,7 @@ describe('ContentsList', () => {
       const element = shallow(<ContentsList.Item current>Content</ContentsList.Item>);
       expect(
         element.containsMatchingElement(
-          <span className="nhsuk-contents-list__current">Content</span>,
+          <span className="govuk-contents-list__current">Content</span>,
         ),
       ).toBeTruthy();
       element.unmount();
@@ -48,7 +48,7 @@ describe('ContentsList', () => {
       const element = shallow(<ContentsList.Item>Content</ContentsList.Item>);
       expect(
         // eslint-disable-next-line jsx-a11y/anchor-is-valid
-        element.containsMatchingElement(<a className="nhsuk-contents-list__link">Content</a>),
+        element.containsMatchingElement(<a className="govuk-contents-list__link">Content</a>),
       ).toBeTruthy();
       element.unmount();
     });

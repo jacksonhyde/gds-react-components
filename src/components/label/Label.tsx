@@ -1,11 +1,11 @@
 import React, { HTMLProps } from 'react';
 import classNames from 'classnames';
-import { NHSUKSize } from '../../util/types/NHSUKTypes';
+import { govukSize } from '../../util/types/govukTypes';
 
 export interface LabelProps extends Omit<HTMLProps<HTMLLabelElement>, 'size'> {
   bold?: boolean;
   isPageHeading?: boolean;
-  size?: NHSUKSize;
+  size?: govukSize;
 }
 
 const BaseLabel: React.FC<LabelProps> = ({
@@ -14,10 +14,10 @@ const BaseLabel: React.FC<LabelProps> = ({
   // eslint-disable-next-line jsx-a11y/label-has-associated-control
   <label
     className={classNames(
-      'nhsuk-label',
-      { 'nhsuk-label--s': bold && !size },
-      { 'nhsuk-label--xl': isPageHeading && !size },
-      { [`nhsuk-label--${size}`]: size },
+      'govuk-label',
+      { 'govuk-label--s': bold && !size },
+      { 'govuk-label--xl': isPageHeading && !size },
+      { [`govuk-label--${size}`]: size },
       className,
     )}
     {...rest}
@@ -27,7 +27,7 @@ const BaseLabel: React.FC<LabelProps> = ({
 const Label: React.FC<LabelProps> = ({ isPageHeading, ...rest }) => {
   if (isPageHeading) {
     return (
-      <h1 className="nhsuk-label-wrapper">
+      <h1 className="govuk-label-wrapper">
         <BaseLabel isPageHeading {...rest} />
       </h1>
     );

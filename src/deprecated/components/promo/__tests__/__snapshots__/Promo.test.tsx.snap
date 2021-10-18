@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <p
-  className="nhsuk-promo__description"
+  className="govuk-promo__description"
 >
   Description
 </p>
@@ -13,11 +13,11 @@ exports[`Promo Promo.Heading matches snapshot: Promo.Heading 1`] = `
   headingLevel="h3"
 >
   <HeadingLevel
-    className="nhsuk-promo__heading"
+    className="govuk-promo__heading"
     headingLevel="h3"
   >
     <h3
-      className="nhsuk-promo__heading"
+      className="govuk-promo__heading"
     >
       Heading
     </h3>
@@ -31,13 +31,13 @@ exports[`Promo matches snapshot: Promo 1`] = `
     imageProps={Object {}}
   >
     <div
-      className="nhsuk-promo"
+      className="govuk-promo"
     >
       <a
-        className="nhsuk-promo__link-wrapper"
+        className="govuk-promo__link-wrapper"
       >
         <div
-          className="nhsuk-promo__content"
+          className="govuk-promo__content"
         />
       </a>
     </div>

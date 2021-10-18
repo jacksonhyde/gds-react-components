@@ -13,7 +13,7 @@ const NavMenuClose: React.FC<HTMLProps<HTMLButtonElement>> = ({
     <button
       className={
         classNames(
-          'nhsuk-header__navigation-close',
+          'govuk-header__navigation-close',
           className,
         )
       }
@@ -22,7 +22,7 @@ const NavMenuClose: React.FC<HTMLProps<HTMLButtonElement>> = ({
       onClick={toggleMenu}
     >
       <CloseIcon />
-      <span className="nhsuk-u-visually-hidden">Close menu</span>
+      <span className="govuk-u-visually-hidden">Close menu</span>
     </button>
   );
 };

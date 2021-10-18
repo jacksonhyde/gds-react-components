@@ -29,9 +29,9 @@ const Card: ICard = ({
 }) => (
   <div
     className={classNames(
-      'nhsuk-card',
-      { 'nhsuk-card--clickable': clickable },
-      { 'nhsuk-card--feature': feature },
+      'govuk-card',
+      { 'govuk-card--clickable': clickable },
+      { 'govuk-card--feature': feature },
       className,
     )}
     {...rest}

@@ -5,7 +5,7 @@ exports[`CareCard matches snapshot: BaseCareCard 1`] = `
   type="urgent"
 >
   <div
-    className="nhsuk-care-card nhsuk-care-card--urgent"
+    className="govuk-care-card govuk-care-card--urgent"
   />
 </CareCard>
 `;

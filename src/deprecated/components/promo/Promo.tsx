@@ -30,16 +30,16 @@ const BasePromo: React.FC<BasePromoProps> = ({
   const { className: imageClassName, ...restImageProps } = imageProps || {};
 
   return (
-    <div className={classNames('nhsuk-promo', { 'nhsuk-promo--small': small }, className)}>
-      <Component className="nhsuk-promo__link-wrapper" {...rest}>
+    <div className={classNames('govuk-promo', { 'govuk-promo--small': small }, className)}>
+      <Component className="govuk-promo__link-wrapper" {...rest}>
         {imageSrc ? (
           <img
-            className={classNames('nhsuk-promo__img', imageClassName)}
+            className={classNames('govuk-promo__img', imageClassName)}
             src={imageSrc}
             {...restImageProps}
           />
         ) : null}
-        <div className="nhsuk-promo__content">{children}</div>
+        <div className="govuk-promo__content">{children}</div>
       </Component>
     </div>
   );
@@ -54,14 +54,14 @@ interface PromoHeadingProps extends HTMLProps<HTMLHeadingElement> {
 }
 
 const PromoHeading: React.FC<PromoHeadingProps> = ({ className, ...rest }) => (
-  <HeadingLevel className={classNames('nhsuk-promo__heading', className)} {...rest} />
+  <HeadingLevel className={classNames('govuk-promo__heading', className)} {...rest} />
 );
 PromoHeading.defaultProps = {
   headingLevel: 'h3',
 };
 
 const PromoDescription: React.FC<HTMLProps<HTMLParagraphElement>> = ({ className, ...rest }) => (
-  <p className={classNames('nhsuk-promo__description', className)} {...rest} />
+  <p className={classNames('govuk-promo__description', className)} {...rest} />
 );
 
 const PromoGroup: React.FC<HTMLProps<HTMLDivElement>> = ({ className, children, ...rest }) => {
@@ -72,7 +72,7 @@ const PromoGroup: React.FC<HTMLProps<HTMLDivElement>> = ({ className, children, 
     }
   });
   return (
-    <Row className={classNames('nhsuk-promo-group', className)} {...rest}>
+    <Row className={classNames('govuk-promo-group', className)} {...rest}>
       <PromoContext.Provider value={{ promoCount, isGroup: true }}>
         {children}
       </PromoContext.Provider>
@@ -104,7 +104,7 @@ const Promo: Promo = (props) => {
         break;
     }
     return (
-      <Col className="nhsuk-promo-group__item" width={promoWidth}>
+      <Col className="govuk-promo-group__item" width={promoWidth}>
         <BasePromo {...props} />
       </Col>
     );

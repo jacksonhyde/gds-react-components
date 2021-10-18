@@ -6,11 +6,11 @@ interface ContentsListItemProps extends HTMLProps<HTMLAnchorElement> {
 }
 
 const ContentsListItem: React.FC<ContentsListItemProps> = ({ className, current, ...rest }) => (
-  <li className={classNames('nhsuk-contents-list__item', className)}>
+  <li className={classNames('govuk-contents-list__item', className)}>
     {current ? (
-      <span className="nhsuk-contents-list__current" {...rest} />
+      <span className="govuk-contents-list__current" {...rest} />
     ) : (
-      <a className="nhsuk-contents-list__link" {...rest} />
+      <a className="govuk-contents-list__link" {...rest} />
     )}
   </li>
 );
@@ -26,11 +26,11 @@ interface ContentsList extends React.FC<ContentsListProps> {
 const ContentsList: ContentsList = ({
   className, children, visuallyHiddenText, ...rest
 }) => (
-  <nav className={classNames('nhsuk-contents-list', className)} {...rest}>
+  <nav className={classNames('govuk-contents-list', className)} {...rest}>
     {visuallyHiddenText !== false ? (
-      <h2 className="nhsuk-u-visually-hidden">{visuallyHiddenText}</h2>
+      <h2 className="govuk-u-visually-hidden">{visuallyHiddenText}</h2>
     ) : null}
-    <ol className="nhsuk-contents-list__list">{children}</ol>
+    <ol className="govuk-contents-list__list">{children}</ol>
   </nav>
 );
 

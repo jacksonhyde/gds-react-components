@@ -20,9 +20,9 @@ describe('Button', () => {
     expect(secondaryButton).toMatchSnapshot('SecondaryButton');
     expect(reverseButton).toMatchSnapshot('ReverseButton');
 
-    expect(disabledButton.hasClass('nhsuk-button--disabled')).toBeTruthy();
-    expect(secondaryButton.hasClass('nhsuk-button--secondary')).toBeTruthy();
-    expect(reverseButton.hasClass('nhsuk-button--reverse')).toBeTruthy();
+    expect(disabledButton.hasClass('govuk-button--disabled')).toBeTruthy();
+    expect(secondaryButton.hasClass('govuk-button--secondary')).toBeTruthy();
+    expect(reverseButton.hasClass('govuk-button--reverse')).toBeTruthy();
 
     disabledButton.unmount();
     secondaryButton.unmount();
@@ -34,7 +34,7 @@ describe('Button', () => {
     expect(disabledButton.props()).toEqual({
       'aria-disabled': 'true',
       children: 'Submit',
-      className: 'nhsuk-button nhsuk-button--disabled',
+      className: 'govuk-button govuk-button--disabled',
       disabled: true,
       type: 'submit',
     });
@@ -72,9 +72,9 @@ describe('ButtonLink', () => {
     expect(secondaryButton).toMatchSnapshot('SecondaryButton');
     expect(reverseButton).toMatchSnapshot('ReverseButton');
 
-    expect(disabledButton.hasClass('nhsuk-button--disabled')).toBeTruthy();
-    expect(secondaryButton.hasClass('nhsuk-button--secondary')).toBeTruthy();
-    expect(reverseButton.hasClass('nhsuk-button--reverse')).toBeTruthy();
+    expect(disabledButton.hasClass('govuk-button--disabled')).toBeTruthy();
+    expect(secondaryButton.hasClass('govuk-button--secondary')).toBeTruthy();
+    expect(reverseButton.hasClass('govuk-button--reverse')).toBeTruthy();
 
     disabledButton.unmount();
     secondaryButton.unmount();
@@ -90,7 +90,7 @@ describe('ButtonLink', () => {
     expect(disabledButton.props()).toEqual({
       'aria-disabled': 'true',
       children: 'Submit',
-      className: 'nhsuk-button nhsuk-button--disabled',
+      className: 'govuk-button govuk-button--disabled',
       draggable: false,
       href: '/',
       role: 'button',
@@ -103,7 +103,7 @@ describe('ButtonWrapper', () => {
   it('renders a button when not given a href', () => {
     const component = mount(<ButtonWrapper>Submit</ButtonWrapper>);
     expect(
-      component.containsMatchingElement(<button className="nhsuk-button">Submit</button>),
+      component.containsMatchingElement(<button className="govuk-button">Submit</button>),
     ).toBeTruthy();
     component.unmount();
   });
@@ -111,7 +111,7 @@ describe('ButtonWrapper', () => {
   it('renders an anchor when given a href', () => {
     const component = mount(<ButtonWrapper href="/">Submit</ButtonWrapper>);
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    expect(component.containsMatchingElement(<a className="nhsuk-button">Submit</a>)).toBeTruthy();
+    expect(component.containsMatchingElement(<a className="govuk-button">Submit</a>)).toBeTruthy();
     component.unmount();
   });
 });

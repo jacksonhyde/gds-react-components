@@ -101,8 +101,8 @@ class Checkboxes extends PureComponent<CheckboxesProps, CheckboxesState> {
           return (
             <div
               className={classNames(
-                'nhsuk-checkboxes',
-                { 'nhsuk-checkboxes--conditional': containsConditional },
+                'govuk-checkboxes',
+                { 'govuk-checkboxes--conditional': containsConditional },
                 className,
               )}
               id={id}

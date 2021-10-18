@@ -23,7 +23,7 @@ class SkipLink extends React.Component<SkipLinkProps> {
   }
 
   componentDidMount(): void {
-    // The standard NHSUK Frontend behaviour is to listen on the
+    // The standard govuk Frontend behaviour is to listen on the
     // blur event on the first heading element.
     this.firstHeadingElement = this.getFirstHeadingElement();
     if (this.firstHeadingElement) {
@@ -74,8 +74,8 @@ class SkipLink extends React.Component<SkipLinkProps> {
     if (focusTargetRef && focusTargetRef.current) {
       this.focusElement(focusTargetRef.current);
     } else if (!disableDefaultBehaviour) {
-      // Follow the default NHSUK Frontend behaviour, but go about it in a safer way.
-      // https://github.com/nhsuk/nhsuk-frontend/blob/master/packages/components/skip-link/skip-link.js
+      // Follow the default govuk Frontend behaviour, but go about it in a safer way.
+      // https://github.com/govuk/govuk-frontend/blob/master/packages/components/skip-link/skip-link.js
       if (this.firstHeadingElement) this.focusElement(this.firstHeadingElement);
     }
     if (onClick) {
@@ -95,7 +95,7 @@ class SkipLink extends React.Component<SkipLinkProps> {
     } = this.props;
     return (
       <a
-        className={classNames('nhsuk-skip-link', className)}
+        className={classNames('govuk-skip-link', className)}
         onClick={this.onClick}
         href={disableDefaultBehaviour ? undefined : href}
         {...rest}

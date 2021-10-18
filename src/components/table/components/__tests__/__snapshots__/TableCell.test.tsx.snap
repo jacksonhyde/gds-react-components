@@ -2,6 +2,6 @@
 
 exports[`Table.Cell matches snapshot 1`] = `
 <td
-  className="nhsuk-table__cell"
+  className="govuk-table__cell"
 />
 `;

@@ -7,7 +7,7 @@ const TableBody: React.FC<HTMLProps<HTMLTableSectionElement>> = ({
   children,
   ...rest
 }) => (
-  <tbody className={classNames('nhsuk-table__body', className)} {...rest}>
+  <tbody className={classNames('govuk-table__body', className)} {...rest}>
     <TableSectionContext.Provider value={TableSection.BODY}>
       {children}
     </TableSectionContext.Provider>

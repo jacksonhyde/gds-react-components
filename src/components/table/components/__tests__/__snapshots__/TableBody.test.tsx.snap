@@ -2,7 +2,7 @@
 
 exports[`Table.Body matches snapshot 1`] = `
 <tbody
-  className="nhsuk-table__body"
+  className="govuk-table__body"
 >
   <ContextProvider
     value={2}

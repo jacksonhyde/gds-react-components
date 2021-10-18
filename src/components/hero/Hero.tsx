@@ -12,16 +12,16 @@ const HeroContent: React.FC<HeroContentProps> = ({ children, hasImage }) => {
     return null;
   }
   return (
-    <Container className={classNames({ 'nhsuk-hero--border': hasImage })}>
+    <Container className={classNames({ 'govuk-hero--border': hasImage })}>
       <Row>
         <Col width="two-thirds">
           {hasImage ? (
-            <div className="nhsuk-hero-content">
+            <div className="govuk-hero-content">
               {children}
-              <span className="nhsuk-hero__arrow" aria-hidden="true" />
+              <span className="govuk-hero__arrow" aria-hidden="true" />
             </div>
           ) : (
-            <div className="nhsuk-hero__wrapper">{children}</div>
+            <div className="govuk-hero__wrapper">{children}</div>
           )}
         </Col>
       </Row>
@@ -34,14 +34,14 @@ interface HeroHeadingProps extends HTMLProps<HTMLHeadingElement> {
 }
 
 const HeroHeading: React.FC<HeroHeadingProps> = ({ className, ...rest }) => (
-  <HeadingLevel className={classNames('nhsuk-u-margin-bottom-3', className)} {...rest} />
+  <HeadingLevel className={classNames('govuk-u-margin-bottom-3', className)} {...rest} />
 );
 HeroHeading.defaultProps = {
   headingLevel: 'h1',
 };
 
 const HeroText: React.FC<HTMLProps<HTMLParagraphElement>> = ({ className, ...rest }) => (
-  <p className={classNames('nhsuk-body-l nhsuk-u-margin-bottom-0', className)} {...rest} />
+  <p className={classNames('govuk-body-l govuk-u-margin-bottom-0', className)} {...rest} />
 );
 
 interface HeroProps extends HTMLProps<HTMLDivElement> {
@@ -58,16 +58,16 @@ const Hero: Hero = ({
 }) => (
   <section
     className={classNames(
-      'nhsuk-hero',
-      { 'nhsuk-hero--image': imageSrc },
-      { 'nhsuk-hero--image-description': imageSrc && children },
+      'govuk-hero',
+      { 'govuk-hero--image': imageSrc },
+      { 'govuk-hero--image-description': imageSrc && children },
       className,
     )}
     style={imageSrc ? { backgroundImage: `url('${imageSrc}')` } : undefined}
     {...rest}
   >
     {imageSrc ? (
-      <div className="nhsuk-hero__overlay">
+      <div className="govuk-hero__overlay">
         <HeroContent hasImage={Boolean(imageSrc)}>{children}</HeroContent>
       </div>
     ) : (

@@ -7,7 +7,7 @@ const CardLink: React.FC<AsElementLink<HTMLAnchorElement>> = ({
   asElement: Component = 'a',
   ...rest
 }) => (
-  <Component className={classNames('nhsuk-card__link', className)} {...rest} />
+  <Component className={classNames('govuk-card__link', className)} {...rest} />
 );
 
 export default CardLink;

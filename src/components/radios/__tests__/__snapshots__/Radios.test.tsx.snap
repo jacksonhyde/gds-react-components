@@ -13,10 +13,10 @@ exports[`Radios matches snapshot 1`] = `
     role="radiogroup"
   >
     <div
-      className="nhsuk-form-group"
+      className="govuk-form-group"
     >
       <div
-        className="nhsuk-radios"
+        className="govuk-radios"
         id="example"
         role="radiogroup"
       >
@@ -26,11 +26,11 @@ exports[`Radios matches snapshot 1`] = `
           value="yes"
         >
           <div
-            className="nhsuk-radios__item"
+            className="govuk-radios__item"
           >
             <input
               aria-labelledby="example-1--label"
-              className="nhsuk-radios__input"
+              className="govuk-radios__input"
               id="example-1"
               name="example"
               onChange={[Function]}
@@ -38,17 +38,17 @@ exports[`Radios matches snapshot 1`] = `
               value="yes"
             />
             <Label
-              className="nhsuk-radios__label"
+              className="govuk-radios__label"
               htmlFor="example-1"
               id="example-1--label"
             >
               <BaseLabel
-                className="nhsuk-radios__label"
+                className="govuk-radios__label"
                 htmlFor="example-1"
                 id="example-1--label"
               >
                 <label
-                  className="nhsuk-label nhsuk-radios__label"
+                  className="govuk-label govuk-radios__label"
                   htmlFor="example-1"
                   id="example-1--label"
                 >
@@ -64,11 +64,11 @@ exports[`Radios matches snapshot 1`] = `
           value="no"
         >
           <div
-            className="nhsuk-radios__item"
+            className="govuk-radios__item"
           >
             <input
               aria-labelledby="example-2--label"
-              className="nhsuk-radios__input"
+              className="govuk-radios__input"
               id="example-2"
               name="example"
               onChange={[Function]}
@@ -76,17 +76,17 @@ exports[`Radios matches snapshot 1`] = `
               value="no"
             />
             <Label
-              className="nhsuk-radios__label"
+              className="govuk-radios__label"
               htmlFor="example-2"
               id="example-2--label"
             >
               <BaseLabel
-                className="nhsuk-radios__label"
+                className="govuk-radios__label"
                 htmlFor="example-2"
                 id="example-2--label"
               >
                 <label
-                  className="nhsuk-label nhsuk-radios__label"
+                  className="govuk-label govuk-radios__label"
                   htmlFor="example-2"
                   id="example-2--label"
                 >

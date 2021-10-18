@@ -11,19 +11,19 @@ describe('InsetText', () => {
 
   it('has default visually hidden text', () => {
     const component = shallow(<InsetText />);
-    expect(component.find('.nhsuk-u-visually-hidden').text()).toBe('Information: ');
+    expect(component.find('.govuk-u-visually-hidden').text()).toBe('Information: ');
     component.unmount();
   });
 
   it('has disabled visually hidden text', () => {
     const component = shallow(<InsetText visuallyHiddenText={false} />);
-    expect(component.find('.nhsuk-u-visually-hidden').exists()).toBeFalsy();
+    expect(component.find('.govuk-u-visually-hidden').exists()).toBeFalsy();
     component.unmount();
   });
 
   it('has custom visually hidden text', () => {
     const component = shallow(<InsetText visuallyHiddenText="Custom" />);
-    expect(component.find('.nhsuk-u-visually-hidden').text()).toBe('Custom');
+    expect(component.find('.govuk-u-visually-hidden').text()).toBe('Custom');
     component.unmount();
   });
 

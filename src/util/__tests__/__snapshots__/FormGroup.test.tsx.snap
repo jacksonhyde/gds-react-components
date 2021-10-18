@@ -6,7 +6,7 @@ exports[`FormGroup matches snapshot 1`] = `
   inputType="input"
 >
   <div
-    className="nhsuk-form-group"
+    className="govuk-form-group"
   >
     <input
       id="testID"

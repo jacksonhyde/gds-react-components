@@ -2,11 +2,11 @@
 
 exports[`ErrorMessage matches snapshot: ErrorMessage 1`] = `
 <span
-  className="nhsuk-error-message"
+  className="govuk-error-message"
   role="alert"
 >
   <span
-    className="nhsuk-u-visually-hidden"
+    className="govuk-u-visually-hidden"
   >
     Error: 
   </span>

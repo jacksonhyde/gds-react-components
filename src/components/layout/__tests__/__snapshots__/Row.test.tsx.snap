@@ -2,6 +2,6 @@
 
 exports[`Row matches snapshot: Row 1`] = `
 <div
-  className="nhsuk-grid-row"
+  className="govuk-grid-row"
 />
 `;

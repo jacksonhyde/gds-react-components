@@ -14,7 +14,7 @@ const NavContainer: React.FC<HTMLProps<HTMLDivElement>> = ({
   return (
     <nav
       className={classNames(
-        'nhsuk-header__navigation',
+        'govuk-header__navigation',
         { 'js-show': open !== undefined ? open : menuOpen },
         className,
       )}

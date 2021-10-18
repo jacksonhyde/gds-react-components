@@ -11,9 +11,9 @@ const InsetText: React.FC<InsetTextProps> = ({
   visuallyHiddenText,
   ...rest
 }) => (
-  <div className={classNames('nhsuk-inset-text', className)} {...rest}>
+  <div className={classNames('govuk-inset-text', className)} {...rest}>
     {visuallyHiddenText ? (
-      <span className="nhsuk-u-visually-hidden">{visuallyHiddenText}</span>
+      <span className="govuk-u-visually-hidden">{visuallyHiddenText}</span>
     ) : null}
     {children}
   </div>

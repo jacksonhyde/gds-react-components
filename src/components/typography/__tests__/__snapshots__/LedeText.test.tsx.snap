@@ -2,7 +2,7 @@
 
 exports[`LedeText matches snapshot 1`] = `
 <p
-  className="nhsuk-lede-text"
+  className="govuk-lede-text"
 >
   Text
 </p>

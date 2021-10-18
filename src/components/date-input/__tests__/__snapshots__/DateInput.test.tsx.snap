@@ -11,10 +11,10 @@ exports[`DateInput matches snapshot 1`] = `
     name="testInput"
   >
     <div
-      className="nhsuk-form-group"
+      className="govuk-form-group"
     >
       <div
-        className="nhsuk-date-input"
+        className="govuk-date-input"
         id="testInput"
       >
         <DayInput>
@@ -25,23 +25,23 @@ exports[`DateInput matches snapshot 1`] = `
             type="text"
           >
             <div
-              className="nhsuk-date-input__item"
+              className="govuk-date-input__item"
             >
               <div
-                className="nhsuk-form-group"
+                className="govuk-form-group"
               >
                 <Label
-                  className="nhsuk-date-input__label"
+                  className="govuk-date-input__label"
                   htmlFor="testInput-day"
                   id="testInput-day--label"
                 >
                   <BaseLabel
-                    className="nhsuk-date-input__label"
+                    className="govuk-date-input__label"
                     htmlFor="testInput-day"
                     id="testInput-day--label"
                   >
                     <label
-                      className="nhsuk-label nhsuk-date-input__label"
+                      className="govuk-label govuk-date-input__label"
                       htmlFor="testInput-day"
                       id="testInput-day--label"
                     >
@@ -51,7 +51,7 @@ exports[`DateInput matches snapshot 1`] = `
                 </Label>
                 <input
                   aria-labelledby="testInput-day--label"
-                  className="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                  className="govuk-input govuk-date-input__input govuk-input--width-2"
                   id="testInput-day"
                   inputMode="numeric"
                   name="testInput-day"
@@ -71,23 +71,23 @@ exports[`DateInput matches snapshot 1`] = `
             type="text"
           >
             <div
-              className="nhsuk-date-input__item"
+              className="govuk-date-input__item"
             >
               <div
-                className="nhsuk-form-group"
+                className="govuk-form-group"
               >
                 <Label
-                  className="nhsuk-date-input__label"
+                  className="govuk-date-input__label"
                   htmlFor="testInput-month"
                   id="testInput-month--label"
                 >
                   <BaseLabel
-                    className="nhsuk-date-input__label"
+                    className="govuk-date-input__label"
                     htmlFor="testInput-month"
                     id="testInput-month--label"
                   >
                     <label
-                      className="nhsuk-label nhsuk-date-input__label"
+                      className="govuk-label govuk-date-input__label"
                       htmlFor="testInput-month"
                       id="testInput-month--label"
                     >
@@ -97,7 +97,7 @@ exports[`DateInput matches snapshot 1`] = `
                 </Label>
                 <input
                   aria-labelledby="testInput-month--label"
-                  className="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                  className="govuk-input govuk-date-input__input govuk-input--width-2"
                   id="testInput-month"
                   inputMode="numeric"
                   name="testInput-month"
@@ -117,23 +117,23 @@ exports[`DateInput matches snapshot 1`] = `
             type="text"
           >
             <div
-              className="nhsuk-date-input__item"
+              className="govuk-date-input__item"
             >
               <div
-                className="nhsuk-form-group"
+                className="govuk-form-group"
               >
                 <Label
-                  className="nhsuk-date-input__label"
+                  className="govuk-date-input__label"
                   htmlFor="testInput-year"
                   id="testInput-year--label"
                 >
                   <BaseLabel
-                    className="nhsuk-date-input__label"
+                    className="govuk-date-input__label"
                     htmlFor="testInput-year"
                     id="testInput-year--label"
                   >
                     <label
-                      className="nhsuk-label nhsuk-date-input__label"
+                      className="govuk-label govuk-date-input__label"
                       htmlFor="testInput-year"
                       id="testInput-year--label"
                     >
@@ -143,7 +143,7 @@ exports[`DateInput matches snapshot 1`] = `
                 </Label>
                 <input
                   aria-labelledby="testInput-year--label"
-                  className="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+                  className="govuk-input govuk-date-input__input govuk-input--width-4"
                   id="testInput-year"
                   inputMode="numeric"
                   name="testInput-year"

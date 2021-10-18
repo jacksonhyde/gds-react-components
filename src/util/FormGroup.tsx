@@ -84,9 +84,9 @@ const FormGroup = <T extends BaseFormElementRenderProps>(props: FormGroupProps<T
   return (
     <div
       className={classNames(
-        'nhsuk-form-group',
+        'govuk-form-group',
         {
-          'nhsuk-form-group--error': !disableErrorFromComponents && !disableErrorLine && error,
+          'govuk-form-group--error': !disableErrorFromComponents && !disableErrorLine && error,
         },
         formGroupClassName,
       )}

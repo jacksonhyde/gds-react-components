@@ -16,25 +16,25 @@ const PaginationLink: React.FC<PaginationLinkProps> = ({
 }) => (
   <li
     className={classNames(
-      { 'nhsuk-pagination-item--previous': previous },
-      { 'nhsuk-pagination-item--next': next },
+      { 'govuk-pagination-item--previous': previous },
+      { 'govuk-pagination-item--next': next },
     )}
   >
     <a
       className={classNames(
-        'nhsuk-pagination__link',
-        { 'nhsuk-pagination__link--prev': previous },
-        { 'nhsuk-pagination__link--next': next },
+        'govuk-pagination__link',
+        { 'govuk-pagination__link--prev': previous },
+        { 'govuk-pagination__link--next': next },
         className,
       )}
       {...rest}
     >
-      <span className="nhsuk-pagination__title">
+      <span className="govuk-pagination__title">
         {previous ? 'Previous' : null}
         {next ? 'Next' : null}
       </span>
-      <span className="nhsuk-u-visually-hidden">:</span>
-      <span className="nhsuk-pagination__page">{children}</span>
+      <span className="govuk-u-visually-hidden">:</span>
+      <span className="govuk-pagination__page">{children}</span>
       {previous ? <ArrowLeft /> : null}
       {next ? <ArrowRight /> : null}
     </a>
@@ -46,8 +46,8 @@ interface Pagination extends React.FC<HTMLProps<HTMLDivElement>> {
 }
 
 const Pagination: Pagination = ({ className, children, ...rest }) => (
-  <nav className={classNames('nhsuk-pagination', className)} {...rest}>
-    <ul className="nhsuk-list nhsuk-pagination__list">{children}</ul>
+  <nav className={classNames('govuk-pagination', className)} {...rest}>
+    <ul className="govuk-list govuk-pagination__list">{children}</ul>
   </nav>
 );
 

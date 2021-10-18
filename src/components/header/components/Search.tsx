@@ -16,29 +16,29 @@ const Search: React.FC<SearchProps> = ({
     return () => setSearch(false);
   }, []);
   return (
-    <div className="nhsuk-header__search">
+    <div className="govuk-header__search">
       <button
-        className={classNames('nhsuk-header__search-toggle', { 'is-active': searchOpen })}
+        className={classNames('govuk-header__search-toggle', { 'is-active': searchOpen })}
         aria-label="Open search"
         aria-expanded={searchOpen ? 'true' : 'false'}
         onClick={toggleSearch}
       >
         <SearchIcon />
-        <span className="nhsuk-u-visually-hidden">Search</span>
+        <span className="govuk-u-visually-hidden">Search</span>
       </button>
-      <div className={classNames('nhsuk-header__search-wrap', { 'js-show': searchOpen })}>
-        <form className="nhsuk-header__search-form" action={action} method={method} role="search">
-          <label className="nhsuk-u-visually-hidden" htmlFor={id}>
+      <div className={classNames('govuk-header__search-wrap', { 'js-show': searchOpen })}>
+        <form className="govuk-header__search-form" action={action} method={method} role="search">
+          <label className="govuk-u-visually-hidden" htmlFor={id}>
             {visuallyHiddenText}
           </label>
-          <input className="nhsuk-search__input" id={id} {...rest} />
-          <button className="nhsuk-search__submit" type="submit">
+          <input className="govuk-search__input" id={id} {...rest} />
+          <button className="govuk-search__submit" type="submit">
             <SearchIcon />
-            <span className="nhsuk-u-visually-hidden">Search</span>
+            <span className="govuk-u-visually-hidden">Search</span>
           </button>
-          <button className="nhsuk-search__close">
+          <button className="govuk-search__close">
             <CloseIcon />
-            <span className="nhsuk-u-visually-hidden">Close search</span>
+            <span className="govuk-u-visually-hidden">Close search</span>
           </button>
         </form>
       </div>

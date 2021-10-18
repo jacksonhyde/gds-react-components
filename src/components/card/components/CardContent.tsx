@@ -7,8 +7,8 @@ const CardContent: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }
   return (
     <div
       className={classNames(
-        'nhsuk-card__content',
-        { 'nhsuk-card__content--feature': feature },
+        'govuk-card__content',
+        { 'govuk-card__content--feature': feature },
         className,
       )}
       {...rest}

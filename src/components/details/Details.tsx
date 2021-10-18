@@ -14,23 +14,23 @@ interface Details extends React.FC<DetailsProps> {
 // TODO: Check if standard NHS.UK polyfill "details.polyfill.js" is required
 const Details: Details = ({ className, expander, ...rest }) => (
   <details
-    className={classNames('nhsuk-details', { 'nhsuk-expander': expander }, className)}
+    className={classNames('govuk-details', { 'govuk-expander': expander }, className)}
     {...rest}
   />
 );
 
 const DetailsSummary: React.FC<HTMLProps<HTMLDivElement>> = ({ className, children, ...rest }) => (
-  <summary className={classNames('nhsuk-details__summary', className)} {...rest}>
-    <span className="nhsuk-details__summary-text">{children}</span>
+  <summary className={classNames('govuk-details__summary', className)} {...rest}>
+    <span className="govuk-details__summary-text">{children}</span>
   </summary>
 );
 
 const DetailsText: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }) => (
-  <div className={classNames('nhsuk-details__text', className)} {...rest} />
+  <div className={classNames('govuk-details__text', className)} {...rest} />
 );
 
 const ExpanderGroup: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }) => (
-  <div className={classNames('nhsuk-expander-group', className)} {...rest} />
+  <div className={classNames('govuk-expander-group', className)} {...rest} />
 );
 
 Details.Summary = DetailsSummary;

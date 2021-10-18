@@ -31,9 +31,9 @@ export const WithHintText = (): JSX.Element => (
         Sign in with Government Gateway
       </Checkboxes.Box>
       <Checkboxes.Box
-        id="nhsuk-login"
+        id="govuk-login"
         name="verify"
-        value="nhsuk-verify"
+        value="govuk-verify"
         hint="You’ll have an account if you’ve already proved your identity with either Barclays, CitizenSafe, Digidentity, Experian, Post Office, Royal Mail or SecureIdentity."
       >
         Sign in with NHS.UK login

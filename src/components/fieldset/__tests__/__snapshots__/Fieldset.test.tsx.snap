@@ -2,7 +2,7 @@
 
 exports[`Fieldset Fieldset.Legend matches snapshot: FieldsetLegend 1`] = `
 <legend
-  className="nhsuk-fieldset__legend"
+  className="govuk-fieldset__legend"
 >
   Text
 </legend>
@@ -19,7 +19,7 @@ exports[`Fieldset matches snapshot: Fieldset 1`] = `
   }
 >
   <fieldset
-    className="nhsuk-fieldset"
+    className="govuk-fieldset"
   >
     Text
   </fieldset>

@@ -15,8 +15,8 @@ describe('DoDontList', () => {
   it('adds the correct header', () => {
     const doElement = mount(<DoDontList listType="do" />);
     const dontElement = mount(<DoDontList listType="dont" />);
-    expect(doElement.find('h3.nhsuk-do-dont-list__label').text()).toEqual('Do');
-    expect(dontElement.find('h3.nhsuk-do-dont-list__label').text()).toEqual("Don't");
+    expect(doElement.find('h3.govuk-do-dont-list__label').text()).toEqual('Do');
+    expect(dontElement.find('h3.govuk-do-dont-list__label').text()).toEqual("Don't");
     doElement.unmount();
     dontElement.unmount();
   });
@@ -25,11 +25,11 @@ describe('DoDontList', () => {
     const doElement = mount(<DoDontList listType="do" />);
     const dontElement = mount(<DoDontList listType="dont" />);
 
-    expect(doElement.find('ul').hasClass('nhsuk-list--tick')).toBeTruthy();
-    expect(doElement.find('ul').hasClass('nhsuk-list--cross')).toBeFalsy();
+    expect(doElement.find('ul').hasClass('govuk-list--tick')).toBeTruthy();
+    expect(doElement.find('ul').hasClass('govuk-list--cross')).toBeFalsy();
 
-    expect(dontElement.find('ul').hasClass('nhsuk-list--tick')).toBeFalsy();
-    expect(dontElement.find('ul').hasClass('nhsuk-list--cross')).toBeTruthy();
+    expect(dontElement.find('ul').hasClass('govuk-list--tick')).toBeFalsy();
+    expect(dontElement.find('ul').hasClass('govuk-list--cross')).toBeTruthy();
 
     doElement.unmount();
     dontElement.unmount();
@@ -54,11 +54,11 @@ describe('DoDontList', () => {
         </DoDontList>,
       );
 
-      expect(doList.find('.nhsuk-icon__tick').exists()).toBeTruthy();
-      expect(doList.find('.nhsuk-icon__cross').exists()).toBeFalsy();
+      expect(doList.find('.govuk-icon__tick').exists()).toBeTruthy();
+      expect(doList.find('.govuk-icon__cross').exists()).toBeFalsy();
 
-      expect(dontList.find('.nhsuk-icon__tick').exists()).toBeFalsy();
-      expect(dontList.find('.nhsuk-icon__cross').exists()).toBeTruthy();
+      expect(dontList.find('.govuk-icon__tick').exists()).toBeFalsy();
+      expect(dontList.find('.govuk-icon__cross').exists()).toBeTruthy();
 
       doList.unmount();
       dontList.unmount();

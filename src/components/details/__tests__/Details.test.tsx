@@ -14,7 +14,7 @@ describe('Details', () => {
 
   it('adds expander classes', () => {
     const expander = shallow(<Details expander />);
-    expect(expander.hasClass('nhsuk-expander')).toBeTruthy();
+    expect(expander.hasClass('govuk-expander')).toBeTruthy();
     expander.unmount();
   });
 
@@ -25,7 +25,7 @@ describe('Details', () => {
       expect(element.type()).toEqual('summary');
       expect(
         element.containsMatchingElement(
-          <span className="nhsuk-details__summary-text">Content</span>,
+          <span className="govuk-details__summary-text">Content</span>,
         ),
       ).toBeTruthy();
       element.unmount();

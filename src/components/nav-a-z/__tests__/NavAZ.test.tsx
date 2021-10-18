@@ -16,7 +16,7 @@ describe('NavAZ', () => {
   it('renders fullAlphabet', () => {
     const element = mount(<NavAZ fullAlphabet />);
     const expectedElements = alphabet.split('').map((letter) => (
-      <a key={letter} className="nhsuk-nav-a-z__link">
+      <a key={letter} className="govuk-nav-a-z__link">
         {letter}
       </a>
     ));
@@ -28,8 +28,8 @@ describe('NavAZ', () => {
     const element = mount(<NavAZ fullAlphabet removedLetters={['A', 'B']} />);
     expect(
       element.containsAnyMatchingElements([
-        <a className="nhsuk-nav-a-z__link">A</a>,
-        <a className="nhsuk-nav-a-z__link">B</a>,
+        <a className="govuk-nav-a-z__link">A</a>,
+        <a className="govuk-nav-a-z__link">B</a>,
       ]),
     ).toBeFalsy();
     element.unmount();
@@ -39,14 +39,14 @@ describe('NavAZ', () => {
     const element = mount(<NavAZ fullAlphabet disabledLetters={['A', 'B']} />);
     expect(
       element.containsAnyMatchingElements([
-        <a className="nhsuk-nav-a-z__link">A</a>,
-        <a className="nhsuk-nav-a-z__link">B</a>,
+        <a className="govuk-nav-a-z__link">A</a>,
+        <a className="govuk-nav-a-z__link">B</a>,
       ]),
     ).toBeFalsy();
     expect(
       element.containsAllMatchingElements([
-        <span className="nhsuk-nav-a-z__link--disabled">A</span>,
-        <span className="nhsuk-nav-a-z__link--disabled">B</span>,
+        <span className="govuk-nav-a-z__link--disabled">A</span>,
+        <span className="govuk-nav-a-z__link--disabled">B</span>,
       ]),
     ).toBeTruthy();
     element.unmount();
@@ -66,8 +66,8 @@ describe('NavAZ', () => {
     const element = mount(<NavAZ letters={['A', 'B']} />);
     expect(
       element.containsAllMatchingElements([
-        <a className="nhsuk-nav-a-z__link">A</a>,
-        <a className="nhsuk-nav-a-z__link">B</a>,
+        <a className="govuk-nav-a-z__link">A</a>,
+        <a className="govuk-nav-a-z__link">B</a>,
       ]),
     ).toBeTruthy();
     element.unmount();

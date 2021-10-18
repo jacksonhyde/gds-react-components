@@ -8,16 +8,16 @@ type Item = React.FC<AsElementLink<HTMLAnchorElement>>;
 const Item: Item = ({
   className, children, asElement: Component = 'a', ...rest
 }) => (
-  <li className="nhsuk-breadcrumb__item">
-    <Component className={classNames('nhsuk-breadcrumb__link', className)} {...rest}>
+  <li className="govuk-breadcrumbs__list-item">
+    <Component className={classNames('govuk-breadcrumbs__link', className)} {...rest}>
       {children}
     </Component>
   </li>
 );
 
 const Back: Item = ({ className, asElement: Component = 'a', ...rest }) => (
-  <p className={classNames('nhsuk-breadcrumb__back', className)}>
-    <Component className="nhsuk-breadcrumb__backlink" {...rest} />
+  <p className={classNames('govuk-breadcrumbs__back', className)}>
+    <Component className="govuk-back-link" {...rest} />
   </p>
 );
 
@@ -49,11 +49,9 @@ const Breadcrumb: Breadcrumb = ({ className, children, ...rest }) => {
   );
 
   return (
-    <nav className={classNames('nhsuk-breadcrumb', className)} {...rest}>
-      <Container>
-        <ol className="nhsuk-breadcrumb__list">{ItemChildren}</ol>
+    <nav className={classNames('govuk-breadcrumbs', className)} {...rest}>
+        <ol className="govuk-breadcrumbs__list">{ItemChildren}</ol>
         {OtherChildren}
-      </Container>
     </nav>
   );
 };

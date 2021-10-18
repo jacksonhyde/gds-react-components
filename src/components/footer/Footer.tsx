@@ -9,8 +9,8 @@ interface FooterListProps extends HTMLProps<HTMLOListElement> {
 const FooterList: React.FC<FooterListProps> = ({ className, columns, ...rest }) => (
   <ul
     className={classNames(
-      'nhsuk-footer__list',
-      { 'nhsuk-footer__list--three-columns': columns },
+      'govuk-footer__list',
+      { 'govuk-footer__list--three-columns': columns },
       className,
     )}
     {...rest}
@@ -18,13 +18,13 @@ const FooterList: React.FC<FooterListProps> = ({ className, columns, ...rest }) 
 );
 
 const FooterListItem: React.FC<HTMLProps<HTMLAnchorElement>> = ({ className, ...rest }) => (
-  <li className="nhsuk-footer__list-item">
-    <a className={classNames('nhsuk-footer__list-item-link', className)} {...rest} />
+  <li className="govuk-footer__list-item">
+    <a className={classNames('govuk-footer__list-item-link', className)} {...rest} />
   </li>
 );
 
 const FooterCopyright: React.FC<HTMLProps<HTMLParagraphElement>> = ({ className, ...rest }) => (
-  <p className={classNames('nhsuk-footer__copyright', className)} {...rest} />
+  <p className={classNames('govuk-footer__copyright', className)} {...rest} />
 );
 
 interface FooterProps extends HTMLProps<HTMLDivElement> {
@@ -41,10 +41,10 @@ const Footer: Footer = ({
   className, children, visuallyHiddenText, ...rest
 }) => (
   <footer {...rest}>
-    <div className={classNames('nhsuk-footer', className)}>
+    <div className={classNames('govuk-footer', className)}>
       <Container>
         {visuallyHiddenText ? (
-          <h2 className="nhsuk-u-visually-hidden">{visuallyHiddenText}</h2>
+          <h2 className="govuk-u-visually-hidden">{visuallyHiddenText}</h2>
         ) : null}
         {children}
       </Container>

@@ -2,10 +2,10 @@
 
 exports[`ReviewDate matches snapshot: ReviewDate 1`] = `
 <div
-  className="nhsuk-review-date"
+  className="govuk-review-date"
 >
   <p
-    className="nhsuk-body-s"
+    className="govuk-body-s"
   />
 </div>
 `;

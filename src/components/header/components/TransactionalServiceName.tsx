@@ -12,12 +12,12 @@ const TransactionalServiceName: React.FC<TransactionalServiceNameProps> = ({
 }) => (
   <div
     className={classNames(
-      'nhsuk-header__transactional-service-name',
-      { 'nhsuk-header__transactional-service-name--long': long },
+      'govuk-header__transactional-service-name',
+      { 'govuk-header__transactional-service-name--long': long },
       className,
     )}
   >
-    <a className="nhsuk-header__transactional-service-name--link" {...rest} />
+    <a className="govuk-header__transactional-service-name--link" {...rest} />
   </div>
 );
 

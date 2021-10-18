@@ -2,6 +2,6 @@
 
 exports[`TableCaption matches snapshot 1`] = `
 <caption
-  className="nhsuk-table__caption"
+  className="govuk-table__caption"
 />
 `;

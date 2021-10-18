@@ -113,9 +113,9 @@ class Radios extends PureComponent<RadiosProps, RadiosState> {
           return (
             <div
               className={classNames(
-                'nhsuk-radios',
-                { 'nhsuk-radios--inline': inline },
-                { 'nhsuk-radios--conditional': containsConditional },
+                'govuk-radios',
+                { 'govuk-radios--inline': inline },
+                { 'govuk-radios--conditional': containsConditional },
                 className,
               )}
               id={id}

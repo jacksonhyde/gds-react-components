@@ -31,6 +31,6 @@ export default create({
   inputTextColor: "#212b32",
   inputBorderRadius: 4,
 
-  brandTitle: `NHS.UK React Components (v${version})`,
-  brandUrl: "https://github.com/NHSDigital/nhsuk-react-components",
+  brandTitle: `GDS React Components (v${version})`,
+  brandUrl: "https://github.com/jacksonhyde/gds-react-components",
 });

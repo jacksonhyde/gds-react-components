@@ -1,7 +1,7 @@
 import React, { HTMLProps, MutableRefObject } from 'react';
 import classNames from 'classnames';
 import FormGroup from '../../util/FormGroup';
-import { InputWidth } from '../../util/types/NHSUKTypes';
+import { InputWidth } from '../../util/types/govukTypes';
 import { FormElementProps } from '../../util/types/FormTypes';
 
 interface InputProps extends HTMLProps<HTMLInputElement>, FormElementProps {
@@ -17,9 +17,9 @@ const Input: React.FC<InputProps> = (props) => (
     }) => (
       <input
         className={classNames(
-          'nhsuk-input',
-          { [`nhsuk-input--width-${width}`]: width },
-          { 'nhsuk-input--error': error },
+          'govuk-input',
+          { [`govuk-input--width-${width}`]: width },
+          { 'govuk-input--error': error },
           className,
         )}
         ref={inputRef}

@@ -57,8 +57,8 @@ const NavAZ: NavAZ = ({
   letters,
   ...rest
 }) => (
-  <nav className={classNames('nhsuk-nav-a-z', className)} {...rest}>
-    <ol className="nhsuk-nav-a-z__list">
+  <nav className={classNames('govuk-nav-a-z', className)} {...rest}>
+    <ol className="govuk-nav-a-z__list">
       {processLetters(children, fullAlphabet, removedLetters, disabledLetters, letters)}
     </ol>
   </nav>
@@ -69,14 +69,14 @@ const LinkItem: React.FC<AsElementLink<HTMLAnchorElement>> = ({
   asElement: Component = 'a',
   ...rest
 }) => (
-  <li className="nhsuk-nav-a-z__item">
-    <Component className={classNames('nhsuk-nav-a-z__link', className)} {...rest} />
+  <li className="govuk-nav-a-z__item">
+    <Component className={classNames('govuk-nav-a-z__link', className)} {...rest} />
   </li>
 );
 
 const DisabledItem: React.FC<HTMLProps<HTMLSpanElement>> = ({ className, ...rest }) => (
-  <li className="nhsuk-nav-a-z__item">
-    <span className={classNames('nhsuk-nav-a-z__link--disabled', className)} {...rest} />
+  <li className="govuk-nav-a-z__item">
+    <span className={classNames('govuk-nav-a-z__link--disabled', className)} {...rest} />
   </li>
 );
 

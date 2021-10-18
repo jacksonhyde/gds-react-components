@@ -26,10 +26,10 @@ export const Button: React.FC<ButtonProps> = ({
   // eslint-disable-next-line react/button-has-type
   <button
     className={classNames(
-      'nhsuk-button',
-      { 'nhsuk-button--disabled': disabled },
-      { 'nhsuk-button--secondary': secondary },
-      { 'nhsuk-button--reverse': reverse },
+      'govuk-button',
+      { 'govuk-button--disabled': disabled },
+      { 'govuk-button--secondary': secondary },
+      { 'govuk-button--reverse': reverse },
       className,
     )}
     disabled={disabled}
@@ -54,10 +54,10 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
 }) => (
   <a
     className={classNames(
-      'nhsuk-button',
-      { 'nhsuk-button--disabled': disabled },
-      { 'nhsuk-button--secondary': secondary },
-      { 'nhsuk-button--reverse': reverse },
+      'govuk-button',
+      { 'govuk-button--disabled': disabled },
+      { 'govuk-button--secondary': secondary },
+      { 'govuk-button--reverse': reverse },
       className,
     )}
     role={role}

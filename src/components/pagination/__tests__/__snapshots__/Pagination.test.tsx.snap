@@ -5,18 +5,18 @@ exports[`Pagination Pagination.Link matches snapshot: Pagination.Link 1`] = `
   className=""
 >
   <a
-    className="nhsuk-pagination__link"
+    className="govuk-pagination__link"
   >
     <span
-      className="nhsuk-pagination__title"
+      className="govuk-pagination__title"
     />
     <span
-      className="nhsuk-u-visually-hidden"
+      className="govuk-u-visually-hidden"
     >
       :
     </span>
     <span
-      className="nhsuk-pagination__page"
+      className="govuk-pagination__page"
     />
   </a>
 </li>
@@ -25,11 +25,11 @@ exports[`Pagination Pagination.Link matches snapshot: Pagination.Link 1`] = `
 exports[`Pagination matches snapshot: Pagination 1`] = `
 <nav
   aria-label="Pagination"
-  className="nhsuk-pagination"
+  className="govuk-pagination"
   role="navigation"
 >
   <ul
-    className="nhsuk-list nhsuk-pagination__list"
+    className="govuk-list govuk-pagination__list"
   />
 </nav>
 `;

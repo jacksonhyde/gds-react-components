@@ -49,7 +49,7 @@ describe('Table.Cell', () => {
     const cellWrapper = wrapper.find('th');
 
     expect(cellWrapper.exists()).toBeTruthy();
-    expect(cellWrapper.hasClass('nhsuk-table__header')).toBeTruthy();
+    expect(cellWrapper.hasClass('govuk-table__header')).toBeTruthy();
     wrapper.unmount();
   });
 
@@ -67,7 +67,7 @@ describe('Table.Cell', () => {
     const cellWrapper = wrapper.find('td');
 
     expect(cellWrapper.exists()).toBeTruthy();
-    expect(cellWrapper.hasClass('nhsuk-table__cell')).toBeTruthy();
+    expect(cellWrapper.hasClass('govuk-table__cell')).toBeTruthy();
     wrapper.unmount();
   });
 
@@ -110,7 +110,7 @@ describe('Table.Cell', () => {
     );
 
     const cell = wrapper.find('[data-test="cell"]');
-    expect(cell.last().prop('className')).toContain('nhsuk-table__cell--numeric');
+    expect(cell.last().prop('className')).toContain('govuk-table__cell--numeric');
 
     wrapper.unmount();
   });
@@ -127,7 +127,7 @@ describe('Table.Cell', () => {
     );
 
     const cell = wrapper.find('[data-test="cell"]');
-    expect(cell.last().prop('className')).toContain('nhsuk-table__header--numeric');
+    expect(cell.last().prop('className')).toContain('govuk-table__header--numeric');
 
     wrapper.unmount();
   });
@@ -149,9 +149,9 @@ describe('Table.Cell', () => {
     );
 
     const header = wrapper.find('[data-test="header"]');
-    expect(header.last().prop('className')).not.toContain('nhsuk-table__header--numeric');
+    expect(header.last().prop('className')).not.toContain('govuk-table__header--numeric');
     const cell = wrapper.find('[data-test="cell"]');
-    expect(cell.last().prop('className')).not.toContain('nhsuk-table__header--numeric');
+    expect(cell.last().prop('className')).not.toContain('govuk-table__header--numeric');
 
     wrapper.unmount();
   });

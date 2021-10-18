@@ -2,10 +2,10 @@
 
 exports[`ContentsList ContentsList.Item matches snapshot: ContentsList.Item 1`] = `
 <li
-  className="nhsuk-contents-list__item"
+  className="govuk-contents-list__item"
 >
   <a
-    className="nhsuk-contents-list__link"
+    className="govuk-contents-list__link"
   >
     Content
   </a>
@@ -14,16 +14,16 @@ exports[`ContentsList ContentsList.Item matches snapshot: ContentsList.Item 1`] 
 
 exports[`ContentsList matches snapshot: ContentsList 1`] = `
 <nav
-  className="nhsuk-contents-list"
+  className="govuk-contents-list"
   role="navigation"
 >
   <h2
-    className="nhsuk-u-visually-hidden"
+    className="govuk-u-visually-hidden"
   >
     Contents
   </h2>
   <ol
-    className="nhsuk-contents-list__list"
+    className="govuk-contents-list__list"
   />
 </nav>
 `;

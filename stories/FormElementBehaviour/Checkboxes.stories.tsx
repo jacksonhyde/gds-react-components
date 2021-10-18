@@ -46,14 +46,14 @@ export const NoIDSupplied = (): JSX.Element => {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Scenario: No ID Supplied</h2>
-      <h5>Expected Behaviour</h5>
-      <ul className="nhsuk-hint">
+      <h2 className='govuk-heading-m'>Scenario: No ID Supplied</h2>
+      <h5 className='govuk-heading-s'>Expected Behaviour</h5>
+      <ul className="govuk-hint">
         <li>Boxes are selectable via their labels</li>
         <li>The Checkboxes are assigned IDs</li>
       </ul>
-      <h5>Results</h5>
-      <ul className="nhsuk-hint">
+      <h5 className='govuk-heading-s'>Results</h5>
+      <ul className="govuk-hint">
         <li>
           Box 1 ID:
           {checkboxState.box1.id}
@@ -79,7 +79,7 @@ export const NoIDSupplied = (): JSX.Element => {
           {checkboxState.box3.name}
         </li>
       </ul>
-      <h5>Component</h5>
+      <h5 className='govuk-heading-s'>Component</h5>
       <Checkboxes>
         <Checkboxes.Box inputRef={checkbox1Ref}>Box 1</Checkboxes.Box>
         <Checkboxes.Box inputRef={checkbox2Ref}>Box 2</Checkboxes.Box>
@@ -128,14 +128,14 @@ export const NameSupplied = (): JSX.Element => {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Scenario: Name Supplied</h2>
-      <h5>Expected Behaviour</h5>
-      <ul className="nhsuk-hint">
+      <h2 className='govuk-heading-m'>Scenario: Name Supplied</h2>
+      <h5 className='govuk-heading-s'>Expected Behaviour</h5>
+      <ul className="govuk-hint">
         <li>Boxes are selectable via their labels</li>
         <li>The Checkboxes are assigned IDs according to the Checkboxes Name</li>
       </ul>
-      <h5>Results</h5>
-      <ul className="nhsuk-hint">
+      <h5 className='govuk-heading-s'>Results</h5>
+      <ul className="govuk-hint">
         <li>
           Box 1 ID:
           {checkboxState.box1.id}
@@ -161,7 +161,7 @@ export const NameSupplied = (): JSX.Element => {
           {checkboxState.box3.name}
         </li>
       </ul>
-      <h5>Component</h5>
+      <h5 className='govuk-heading-s'>Component</h5>
       <Checkboxes name="name-supplied">
         <Checkboxes.Box inputRef={checkbox1Ref}>Box 1</Checkboxes.Box>
         <Checkboxes.Box inputRef={checkbox2Ref}>Box 2</Checkboxes.Box>
@@ -210,15 +210,15 @@ export const IDPrefixSupplied = (): JSX.Element => {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Scenario: ID Prefix Supplied</h2>
-      <h5>Expected Behaviour</h5>
-      <ul className="nhsuk-hint">
+      <h2 className='govuk-heading-m'>Scenario: ID Prefix Supplied</h2>
+      <h5 className='govuk-heading-s'>Expected Behaviour</h5>
+      <ul className="govuk-hint">
         <li>Boxes are selectable via their labels</li>
         <li>The Checkboxes are assigned IDs according to the ID prefix</li>
         <li>The Checkboxes are assigned randomly generated names</li>
       </ul>
-      <h5>Results</h5>
-      <ul className="nhsuk-hint">
+      <h5 className='govuk-heading-s'>Results</h5>
+      <ul className="govuk-hint">
         <li>
           Box 1 ID:
           {checkboxState.box1.id}
@@ -244,7 +244,7 @@ export const IDPrefixSupplied = (): JSX.Element => {
           {checkboxState.box3.name}
         </li>
       </ul>
-      <h5>Component</h5>
+      <h5 className='govuk-heading-s'>Component</h5>
       <Checkboxes idPrefix="idprefix">
         <Checkboxes.Box inputRef={checkbox1Ref}>Box 1</Checkboxes.Box>
         <Checkboxes.Box inputRef={checkbox2Ref}>Box 2</Checkboxes.Box>
@@ -293,15 +293,15 @@ export const IDPrefixAndNameSupplied = (): JSX.Element => {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Scenario: ID Prefix and Name Supplied</h2>
-      <h5>Expected Behaviour</h5>
-      <ul className="nhsuk-hint">
+      <h2 className='govuk-heading-m'>Scenario: ID Prefix and Name Supplied</h2>
+      <h5 className='govuk-heading-s'>Expected Behaviour</h5>
+      <ul className="govuk-hint">
         <li>Boxes are selectable via their labels</li>
         <li>The Checkboxes are assigned IDs according to the ID prefix</li>
         <li>The Checkboxes have the same name as the Checkboxes component</li>
       </ul>
-      <h5>Results</h5>
-      <ul className="nhsuk-hint">
+      <h5 className='govuk-heading-s'>Results</h5>
+      <ul className="govuk-hint">
         <li>
           Box 1 ID:
           {checkboxState.box1.id}
@@ -327,7 +327,7 @@ export const IDPrefixAndNameSupplied = (): JSX.Element => {
           {checkboxState.box3.name}
         </li>
       </ul>
-      <h5>Component</h5>
+      <h5 className='govuk-heading-s'>Component</h5>
       <Checkboxes idPrefix="idprefix" name="testname">
         <Checkboxes.Box inputRef={checkbox1Ref}>Box 1</Checkboxes.Box>
         <Checkboxes.Box inputRef={checkbox2Ref}>Box 2</Checkboxes.Box>
@@ -365,29 +365,29 @@ export const OnChangeAndOnInputHandlers = (): JSX.Element => {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Scenario: onChange and onInput handlers are bound without any other props</h2>
-      <h5>Expected Behaviour</h5>
-      <ul className="nhsuk-hint">
+      <h2 className='govuk-heading-m'>Scenario: onChange and onInput handlers are bound without any other props</h2>
+      <h5 className='govuk-heading-s'>Expected Behaviour</h5>
+      <ul className="govuk-hint">
         <li>OnChange Handlers are fired using the generated IDs and Names</li>
         <li>The value is passed through</li>
       </ul>
-      <h5>Component</h5>
+      <h5 className='govuk-heading-s'>Component</h5>
       <Checkboxes onChange={handleChange} onInput={handleInput}>
         <Checkboxes.Box value="1">Box 1</Checkboxes.Box>
         <Checkboxes.Box value="2">Box 2</Checkboxes.Box>
         <Checkboxes.Box value="3">Box 3</Checkboxes.Box>
       </Checkboxes>
       <br />
-      <h5>Current Value</h5>
+      <h5 className='govuk-heading-s'>Current Value</h5>
       <pre>{JSON.stringify(currentValue, null, 2)}</pre>
-      <h5>Change Events</h5>
-      <ul className="nhsuk-hint">
+      <h5 className='govuk-heading-s'>Change Events</h5>
+      <ul className="govuk-hint">
         {changeEventLog.map((event, index) => (
           <li key={index}>{event}</li>
         ))}
       </ul>
-      <h5>Input Events</h5>
-      <ul className="nhsuk-hint">
+      <h5 className='govuk-heading-s'>Input Events</h5>
+      <ul className="govuk-hint">
         {inputEventLog.map((event, index) => (
           <li key={index}>{event}</li>
         ))}
