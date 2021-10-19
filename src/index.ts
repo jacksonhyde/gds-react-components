@@ -49,7 +49,7 @@ export { default as SummaryList } from './components/summary-list';
 export { default as Table } from './components/table';
 export { default as Tag } from './components/tag';
 export { default as Textarea } from './components/textarea';
-export { LedeText, BodyText } from './components/typography';
+export { LedeText, BodyText, Heading } from './components/typography';
 export { default as WarningCallout } from './components/warning-callout';
 export { default as Clearfix } from './components/utils/Clearfix';
 export { default as ReadingWidth } from './components/utils/ReadingWidth';

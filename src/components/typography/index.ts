@@ -1,4 +1,5 @@
 import LedeText from './LedeText';
 import BodyText from './BodyText';
+import Heading from './Heading';
 
-export { LedeText, BodyText };
+export { LedeText, BodyText, Heading };
