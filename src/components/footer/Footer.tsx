@@ -110,12 +110,10 @@ interface FooterProps extends HTMLProps<HTMLDivElement> {
 const Footer: Footer = ({
   className, children, visuallyHiddenText, ...rest
 }) => (
-  <footer {...rest}>
-    <div className={classNames('govuk-footer', className)}>
-      <Container>
-        {children}
-      </Container>
-    </div>
+  <footer className={classNames('govuk-footer', className)} {...rest}>
+    <Container>
+      {children}
+    </Container>
   </footer>
 );
 

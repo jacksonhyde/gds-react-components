@@ -7,11 +7,6 @@ export const Standard = (): JSX.Element => (
     <Footer>
       <Footer.Meta>
         <Footer.MetaItem>
-          <Footer.InlineList>
-            <Footer.InlineListItem href="#example1">Item 1</Footer.InlineListItem>
-            <Footer.InlineListItem href="#example2">Item 2</Footer.InlineListItem>
-            <Footer.InlineListItem href="#example3">Item 3</Footer.InlineListItem>
-          </Footer.InlineList>
           <Footer.OGL />
         </Footer.MetaItem>
         <Footer.MetaItem>
@@ -49,14 +44,6 @@ export const WithThreeColumns = (): JSX.Element => (
       </Footer.Nav>
       <Footer.SectionBreak />
       <Footer.Meta>
-        <Footer.MetaItem>
-          <Footer.InlineList>
-            <Footer.InlineListItem href="#example1">Navigation item 1</Footer.InlineListItem>
-            <Footer.InlineListItem href="#example2">Navigation item 2</Footer.InlineListItem>
-            <Footer.InlineListItem href="#example3">Navigation item 3</Footer.InlineListItem>
-          </Footer.InlineList>
-          <Footer.OGL />
-        </Footer.MetaItem>
         <Footer.MetaItem>
           <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
         </Footer.MetaItem>
