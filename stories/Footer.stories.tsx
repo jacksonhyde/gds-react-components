@@ -1,46 +1,83 @@
-// import React from 'react';
-// import { Footer } from '../src';
+import React from 'react';
+import { Footer } from '../src';
 
-// export const Standard = (): JSX.Element => (
-//   <>
-//     <div id="restOfThePage" style={{ height: '60vh' }} />
-//     <Footer>
-//       <Footer.List>
-//         <Footer.ListItem href="https://www.nhs.uk/nhs-sites/">NHS sites</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/about-us/">About us</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/contact-us/">Contact us</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/about-us/sitemap/">Sitemap</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/our-policies/">Our policies</Footer.ListItem>
-//       </Footer.List>
-//       <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
-//     </Footer>
-//   </>
-// );
+export const Standard = (): JSX.Element => (
+  <>
+    <div id="restOfThePage" style={{ height: '60vh' }} />
+    <Footer>
+      <Footer.Meta>
+        <Footer.OGL />
+        <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
+      </Footer.Meta>
+    </Footer>
+  </>
+);
 
-// export const WithThreeColumns = (): JSX.Element => (
-//   <>
-//     <div id="restOfThePage" style={{ height: '60vh' }} />
-//     <Footer>
-//       <Footer.List columns>
-//         <Footer.ListItem href="https://www.nhs.uk/nhs-sites/">NHS sites</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/about-us/">About us</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/contact-us/">Contact us</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/personalisation/login.aspx">
-//           Profile editor login
-//         </Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/about-us/sitemap/">Sitemap</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/accessibility/">Accessibility</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/our-policies/">Our policies</Footer.ListItem>
-//         <Footer.ListItem href="https://www.nhs.uk/our-policies/cookies-policy/">
-//           Cookies
-//         </Footer.ListItem>
-//       </Footer.List>
-//       <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
-//     </Footer>
-//   </>
-// );
+export const WithThreeColumns = (): JSX.Element => (
+  <>
+    <div id="restOfThePage" style={{ height: '60vh' }} />
+    <Footer>
+      <Footer.Nav>
+        <Footer.Section>
+          <Footer.SectionHeader>Two column list</Footer.SectionHeader>
+          <Footer.List columns={2}>
+            <Footer.ListItem href="#example1">Navigation item 1</Footer.ListItem>
+            <Footer.ListItem href="#example2">Navigation item 2</Footer.ListItem>
+            <Footer.ListItem href="#example3">Navigation item 3</Footer.ListItem>
+            <Footer.ListItem href="#example4">Navigation item 4</Footer.ListItem>
+            <Footer.ListItem href="#example5">Navigation item 5</Footer.ListItem>
+            <Footer.ListItem href="#example6">Navigation item 6</Footer.ListItem>
+          </Footer.List>
+        </Footer.Section>
+        <Footer.Section>
+          <Footer.SectionHeader>Single column list</Footer.SectionHeader>
+          <Footer.List columns={1}>
+            <Footer.ListItem href="#example7">Navigation item 7</Footer.ListItem>
+            <Footer.ListItem href="#example8">Navigation item 8</Footer.ListItem>
+            <Footer.ListItem href="#example9">Navigation item 9</Footer.ListItem>
+          </Footer.List>
+        </Footer.Section>
+      </Footer.Nav>
+      <Footer.SectionBreak />
+      <Footer.Meta>
+        <Footer.MetaItem>
+          <Footer.InlineList>
+            <Footer.InlineListItem href="#example1">Navigation item 1</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example2">Navigation item 2</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example3">Navigation item 3</Footer.InlineListItem>
+          </Footer.InlineList>
+          <Footer.OGL />
+        </Footer.MetaItem>
+        <Footer.MetaItem>
+          <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
+        </Footer.MetaItem>
+      </Footer.Meta>
+    </Footer>
+  </>
+);
 
-// export default {
-//   title: 'Components/Footer',
-//   component: Footer,
-// };
+export const WithLinksToMetaInformation = (): JSX.Element => (
+  <>
+    <div id="restOfThePage" style={{ height: '60vh' }} />
+    <Footer>
+      <Footer.Meta>
+        <Footer.MetaItem>
+          <Footer.InlineList>
+            <Footer.InlineListItem href="#example1">Item 1</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example2">Item 2</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example3">Item 3</Footer.InlineListItem>
+          </Footer.InlineList>
+          <Footer.OGL />
+        </Footer.MetaItem>
+        <Footer.MetaItem>
+          <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
+        </Footer.MetaItem>
+      </Footer.Meta>
+    </Footer>
+  </>
+);
+
+export default {
+  title: 'Components/Footer',
+  component: Footer,
+};
