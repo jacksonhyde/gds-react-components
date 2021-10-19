@@ -19,11 +19,7 @@ const GovUKLogo: React.FC<GovUKLogoNavProps> = ({
 }) => {
   const { serviceName, hasMenuToggle, hasSearch } = useContext<IHeaderContext>(HeaderContext);
   return (
-    <div
-      className={classNames('govuk-header__logo', {
-        'govuk-header__logo--only': !hasMenuToggle && !hasSearch,
-      })}
-    >
+    <div className='govuk-header__logo'>
       <Component
         className={classNames(
           'govuk-header__link',

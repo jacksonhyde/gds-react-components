@@ -6,17 +6,9 @@ export interface ServiceNameProps extends HTMLProps<HTMLAnchorElement> {
 }
 
 const ServiceName: React.FC<ServiceNameProps> = ({
-  className,
-  long,
   ...rest
 }) => (
-  <div
-    className={classNames(
-      'govuk-header__transactional-service-name',
-      { 'govuk-header__transactional-service-name--long': long },
-      className,
-    )}
-  >
+  <div className="govuk-header__content">
     <a className="govuk-header__link govuk-header__link--service-name" {...rest} />
   </div>
 );
