@@ -6,7 +6,7 @@ export const Standard = (): JSX.Element => (
     <div id="restOfThePage" style={{ height: '60vh' }} />
     <Footer>
       <Footer.Meta>
-        <Footer.MetaItem>
+        <Footer.MetaItem className="govuk-footer__meta-item--grow">
           <Footer.OGL />
         </Footer.MetaItem>
         <Footer.MetaItem>
@@ -44,6 +44,14 @@ export const WithThreeColumns = (): JSX.Element => (
       </Footer.Nav>
       <Footer.SectionBreak />
       <Footer.Meta>
+        <Footer.MetaItem className="govuk-footer__meta-item--grow">
+          <Footer.InlineList>
+            <Footer.InlineListItem href="#example1">Item 1</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example2">Item 2</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example3">Item 3</Footer.InlineListItem>
+          </Footer.InlineList>
+          <Footer.OGL />
+        </Footer.MetaItem>
         <Footer.MetaItem>
           <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
         </Footer.MetaItem>
@@ -57,7 +65,7 @@ export const WithLinksToMetaInformation = (): JSX.Element => (
     <div id="restOfThePage" style={{ height: '60vh' }} />
     <Footer>
       <Footer.Meta>
-        <Footer.MetaItem>
+        <Footer.MetaItem className="govuk-footer__meta-item--grow">
           <Footer.InlineList>
             <Footer.InlineListItem href="#example1">Item 1</Footer.InlineListItem>
             <Footer.InlineListItem href="#example2">Item 2</Footer.InlineListItem>
