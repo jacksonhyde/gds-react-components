@@ -6,8 +6,17 @@ export const Standard = (): JSX.Element => (
     <div id="restOfThePage" style={{ height: '60vh' }} />
     <Footer>
       <Footer.Meta>
-        <Footer.OGL />
-        <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
+        <Footer.MetaItem>
+          <Footer.InlineList>
+            <Footer.InlineListItem href="#example1">Item 1</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example2">Item 2</Footer.InlineListItem>
+            <Footer.InlineListItem href="#example3">Item 3</Footer.InlineListItem>
+          </Footer.InlineList>
+          <Footer.OGL />
+        </Footer.MetaItem>
+        <Footer.MetaItem>
+          <Footer.Copyright>&copy; Crown copyright</Footer.Copyright>
+        </Footer.MetaItem>
       </Footer.Meta>
     </Footer>
   </>
