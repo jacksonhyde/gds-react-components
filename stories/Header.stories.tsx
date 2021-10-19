@@ -1,6 +1,6 @@
-// import React from 'react';
-// import { Header } from '../src';
-// import { AsElementLink } from '../src/util/types/LinkTypes';
+import React from 'react';
+import { Header } from '../src';
+import { AsElementLink } from '../src/util/types/LinkTypes';
 
 // export const BasicHeader = (): JSX.Element => (
 //   <Header>
@@ -56,41 +56,33 @@
 //   </Header>
 // );
 
-// export const HeaderWithLogo = (): JSX.Element => (
-//   <Header>
-//     <Header.Container>
-//       <Header.Logo href="/" />
-//     </Header.Container>
-//   </Header>
-// );
+export const HeaderWithLogo = (): JSX.Element => (
+  <Header>
+    <Header.Container>
+      <Header.Logo href="/" />
+    </Header.Container>
+  </Header>
+);
 
-// export const TransactionalHeader = (): JSX.Element => (
-//   <Header transactional>
-//     <Header.Container>
-//       <Header.Logo href="/" />
-//     </Header.Container>
-//   </Header>
-// );
+export const TransactionalHeaderWithServiceName = (): JSX.Element => (
+  <Header transactional>
+    <Header.Container>
+      <Header.Logo href="/" />
+      <Header.ServiceName href="/">Register with a GP</Header.ServiceName>
+    </Header.Container>
+  </Header>
+);
 
-// export const TransactionalHeaderWithServiceName = (): JSX.Element => (
-//   <Header transactional>
-//     <Header.Container>
-//       <Header.Logo href="/" />
-//       <Header.ServiceName href="/">Register with a GP</Header.ServiceName>
-//     </Header.Container>
-//   </Header>
-// );
-
-// export const TransactionalHeaderWithALongServiceName = (): JSX.Element => (
-//   <Header transactional>
-//     <Header.Container>
-//       <Header.Logo href="/" />
-//       <Header.ServiceName href="/" long>
-//         Find out why your NHS data matters
-//       </Header.ServiceName>
-//     </Header.Container>
-//   </Header>
-// );
+export const TransactionalHeaderWithALongServiceName = (): JSX.Element => (
+  <Header transactional>
+    <Header.Container>
+      <Header.Logo href="/" />
+      <Header.ServiceName href="/" long>
+        Find out why your NHS data matters
+      </Header.ServiceName>
+    </Header.Container>
+  </Header>
+);
 
 // export const OrganisationalHeader = (): JSX.Element => (
 //   <Header orgName="Anytown Anyplace" orgSplit="Anywhere" orgDescriptor="NHS Foundation Trust">
@@ -192,7 +184,7 @@
 //   </Header>
 // );
 
-// export default {
-//   title: 'Components/Header',
-//   component: Header,
-// };
+export default {
+  title: 'Components/Header',
+  component: Header,
+};

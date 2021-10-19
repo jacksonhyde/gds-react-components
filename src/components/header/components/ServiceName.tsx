@@ -1,11 +1,11 @@
 import React, { HTMLProps } from 'react';
 import classNames from 'classnames';
 
-export interface TransactionalServiceNameProps extends HTMLProps<HTMLAnchorElement> {
+export interface ServiceNameProps extends HTMLProps<HTMLAnchorElement> {
   long?: boolean;
 }
 
-const TransactionalServiceName: React.FC<TransactionalServiceNameProps> = ({
+const ServiceName: React.FC<ServiceNameProps> = ({
   className,
   long,
   ...rest
@@ -17,8 +17,8 @@ const TransactionalServiceName: React.FC<TransactionalServiceNameProps> = ({
       className,
     )}
   >
-    <a className="govuk-header__transactional-service-name--link" {...rest} />
+    <a className="govuk-header__link govuk-header__link--service-name" {...rest} />
   </div>
 );
 
-export default TransactionalServiceName;
+export default ServiceName;

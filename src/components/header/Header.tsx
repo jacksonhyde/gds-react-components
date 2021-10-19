@@ -1,7 +1,6 @@
-import React, { PureComponent, HTMLProps, useContext } from 'react';
+import React, { PureComponent, HTMLProps } from 'react';
 import classNames from 'classnames';
-import NHSLogo, { NHSLogoNavProps } from './components/NHSLogo';
-import OrganisationalLogo, { OrganisationalLogoProps } from './components/OrganisationalLogo';
+import GovUKLogo, { GovUKLogoNavProps } from './components/GovUKLogo';
 import HeaderContext, { IHeaderContext } from './HeaderContext';
 import Search from './components/Search';
 import Nav from './components/Nav';
@@ -11,16 +10,12 @@ import NavMenuClose from './components/NavMenuClose';
 import { Container } from '../layout';
 import Content from './components/Content';
 import MenuToggle from './components/MenuToggle';
-import TransactionalServiceName from './components/TransactionalServiceName';
+import ServiceName from './components/ServiceName';
 import NavTitle from './components/NavTitle';
 import NavContainer from './components/NavContainer';
 
-const BaseHeaderLogo: React.FC<OrganisationalLogoProps & NHSLogoNavProps> = (props) => {
-  const { orgName } = useContext<IHeaderContext>(HeaderContext);
-  if (orgName) {
-    return <OrganisationalLogo {...props} />;
-  }
-  return <NHSLogo {...props} />;
+const BaseHeaderLogo: React.FC<GovUKLogoNavProps> = (props) => {
+  return <GovUKLogo {...props} />;
 };
 
 const HeaderContainer: React.FC<HTMLProps<HTMLDivElement>> = ({ className, ...rest }) => (
@@ -66,7 +61,7 @@ class Header extends PureComponent<HeaderProps, HeaderState> {
 
   static MenuToggle = MenuToggle;
 
-  static ServiceName = TransactionalServiceName;
+  static ServiceName = ServiceName;
 
   static defaultProps = {
     role: 'banner',
