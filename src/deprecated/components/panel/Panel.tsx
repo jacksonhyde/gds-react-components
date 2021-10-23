@@ -9,6 +9,7 @@ interface PanelProps extends HTMLProps<HTMLDivElement> {
   grey?: boolean;
   label?: string;
   labelProps?: HTMLProps<HTMLHeadingElement>;
+  confirmation?: boolean;
 }
 
 interface Panel extends React.FC<PanelProps> {
@@ -18,6 +19,7 @@ interface Panel extends React.FC<PanelProps> {
 const BasePanel: React.FC<PanelProps> = ({
   label,
   grey,
+  confirmation,
   className,
   labelProps,
   children,
@@ -30,7 +32,8 @@ const BasePanel: React.FC<PanelProps> = ({
       className={classNames(
         { 'govuk-panel': !label },
         { 'govuk-panel--grey': grey },
-        { 'govuk-panel-with-label': label },
+        { 'govuk-panel govuk-panel-with-label': label },
+        { 'govuk-panel govuk-panel--confirmation': confirmation },
         className,
       )}
       {...rest}

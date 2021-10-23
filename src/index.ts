@@ -53,3 +53,4 @@ export { LedeText, BodyText, Heading } from './components/typography';
 export { default as WarningCallout } from './components/warning-callout';
 export { default as Clearfix } from './components/utils/Clearfix';
 export { default as ReadingWidth } from './components/utils/ReadingWidth';
+export { default as Panel } from './deprecated/components/panel';
